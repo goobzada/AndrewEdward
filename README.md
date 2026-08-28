@@ -1,20 +1,23 @@
 <p align="center">
-  <img src="./assets/banner.png" width="100%" alt="Andrew Edward Banner" />
+  <a href="https://brancodev.com" target="_blank">
+    <img src="./assets/banner.png" width="100%" alt="Andrew Edward - Branco Dev Banner" />
+  </a>
 </p>
 
-<h1 align="center">Hi, I'm Andrew Edward (BrancoDev) 👋</h1>
+<h1 align="center">Hi, I'm Andrew Edward 👋</h1>
+<h3 align="center">Founder & Senior Architect at <a href="https://brancodev.com" target="_blank">BRANCO DEV</a></h3>
 
 <p align="center">
-  <strong>Full Stack Developer • AI Systems Architect • Cloud & DevOps Engineer</strong>
+  <strong>Full Stack Software Engineer • AI Systems Architect • Cloud & High-Concurrency SaaS</strong>
 </p>
 
 <p align="center">
-  <em>Engineering scalable distributed systems, autonomous AI architectures, and modern cloud infrastructure.</em>
+  <em>"We don't build templates. We engineer digital legacies."</em>
 </p>
 
 <p align="center">
   <a href="https://brancodev.com" target="_blank">
-    <img src="https://img.shields.io/badge/Website-brancodev.com-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Website" />
+    <img src="https://img.shields.io/badge/Official_Website-brancodev.com-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Official Website" />
   </a>
   <a href="https://github.com/goobzada" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-goobzada-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -26,20 +29,19 @@
 
 ---
 
-### 🌐 About Me
+## ⚡ Executive Summary
 
-I am a passionate Full Stack Software Engineer and AI Systems builder focused on creating high-impact platforms from concept to production. My expertise spans building scalable web applications, autonomous agent workflows, distributed backend microservices, and robust cloud infrastructure.
+Senior Full Stack Software Engineer delivering high-performance web applications, bespoke SaaS platforms, autonomous AI agent pipelines, and high-concurrency cloud infrastructure for US and international tech enterprises.
 
-- 🔭 **Currently Building:** Autonomous AI development systems & enterprise SaaS platforms.
-- ⚡ **Core Focus:** AI Agent Orchestration, High-Throughput APIs, Resilient Cloud Architecture.
-- 💼 **Portfolio & Services:** [brancodev.com](https://brancodev.com)
-- 🎯 **Philosophy:** *Build • Automate • Scale*
+- 🌐 **Portfolio & Services:** [brancodev.com](https://brancodev.com)
+- 🚀 **Specialties:** Autonomous AI Systems, Next.js 16 & React 19 Architecture, Distributed Microservices, Cloud Automation.
+- 🎯 **Core Motto:** **BUILD • AUTOMATE • SCALE**
 
 ---
 
-## 🛠 Tech Stack & Capabilities
+## 🛠 Tech Stack & Engineering Arsenal
 
-### ⚡ AI, LLMs & Automation
+### ⚡ AI, LLMs & Autonomous Systems
 <p align="left">
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Claude_AI-D97706?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude AI" />
@@ -49,25 +51,24 @@ I am a passionate Full Stack Software Engineer and AI Systems builder focused on
   <img src="https://img.shields.io/badge/n8n-FF6584?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
 </p>
 
-### 💻 Frontend & Web Development
+### 💻 Frontend & UI/UX Engineering
 <p align="left">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </p>
 
-### ⚙️ Backend, APIs & Distributed Systems
+### ⚙️ Backend, APIs & High-Concurrency Systems
 <p align="left">
   <img src="https://img.shields.io/badge/Go_(Golang)-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
   <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
   <img src="https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=openapiinitiative&logoColor=white" alt="REST APIs" />
@@ -86,7 +87,7 @@ I am a passionate Full Stack Software Engineer and AI Systems builder focused on
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
 </p>
 
-### 🗄️ Databases & Caching
+### 🗄️ Databases & Caching Architecture
 <p align="left">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
@@ -98,24 +99,24 @@ I am a passionate Full Stack Software Engineer and AI Systems builder focused on
 
 ---
 
-## ⭐ Featured Projects
+## ⭐ Featured Case Studies & Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>🚀 InfraForge OS</h3>
-      <p>Autonomous AI Development & Infrastructure Operating System designed to orchestrate AI agents, infrastructure, multi-tenant databases, and deployment pipelines.</p>
+      <p>Autonomous AI Development Operating System engineered to orchestrate intelligent AI agents, cloud infrastructure, database clusters, and deployment pipelines.</p>
       <p>
         <a href="https://github.com/goobzada/AndrewEdward">
-          <img src="https://img.shields.io/badge/View_Repository-000000?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
+          <img src="https://img.shields.io/badge/View_Repo-000000?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
         </a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🌐 BrancoDev Platform</h3>
-      <p>Official portfolio and digital services platform showcasing specialized engineering solutions in AI, SaaS platforms, and cloud infrastructure.</p>
+      <h3>🌐 BRANCO DEV Platform</h3>
+      <p>Official portfolio and digital services platform showcasing specialized engineering solutions in AI systems, custom SaaS, and Swiss-tech architecture.</p>
       <p>
-        <a href="https://brancodev.com">
+        <a href="https://brancodev.com" target="_blank">
           <img src="https://img.shields.io/badge/Visit_Website-F59E0B?style=flat-square&logo=googlechrome&logoColor=black" alt="Visit Website" />
         </a>
       </p>
@@ -135,6 +136,6 @@ I am a passionate Full Stack Software Engineer and AI Systems builder focused on
 ---
 
 <p align="center">
-  <strong>Let's connect & build something extraordinary:</strong><br />
-  🌐 <a href="https://brancodev.com">brancodev.com</a> • ✉️ <a href="mailto:grf87487@email.vccs.edu">grf87487@email.vccs.edu</a>
+  <strong>Let's build high-impact digital systems:</strong><br />
+  🌐 <a href="https://brancodev.com" target="_blank">brancodev.com</a> • ✉️ <a href="mailto:grf87487@email.vccs.edu">grf87487@email.vccs.edu</a>
 </p>
