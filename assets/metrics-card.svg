@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 120" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      .pulse-dot { animation: blink 2s infinite ease-in-out; }
+      .metric-num { font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 26px; font-weight: 600; fill: #167e6c; }
+      .metric-lbl { font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 400; fill: #7c7f88; }
+      .mono-tag { font-family: 'SFMono-Regular', Consolas, Menlo, monospace; font-size: 10px; fill: #111a4a; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Container Surface -->
+  <rect width="920" height="120" rx="8" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
+
+  <!-- Metric 1: System Uptime -->
+  <g transform="translate(48, 32)">
+    <circle cx="6" cy="-8" r="3" fill="#44b48b" class="pulse-dot"/>
+    <text x="16" y="-5" class="mono-tag" letter-spacing="0.5">AVAILABILITY</text>
+    <text x="0" y="32" class="metric-num">99.999%</text>
+    <text x="0" y="54" class="metric-lbl">High-Concurrency SLA</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="260" y1="24" x2="260" y2="96" stroke="#e3e4e8" stroke-width="1"/>
+
+  <!-- Metric 2: Latency -->
+  <g transform="translate(290, 32)">
+    <circle cx="6" cy="-8" r="3" fill="#ec652b" class="pulse-dot"/>
+    <text x="16" y="-5" class="mono-tag" letter-spacing="0.5">EDGE LATENCY</text>
+    <text x="0" y="32" class="metric-num">&lt; 12ms</text>
+    <text x="0" y="54" class="metric-lbl">Global CDN &amp; In-Memory</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="490" y1="24" x2="490" y2="96" stroke="#e3e4e8" stroke-width="1"/>
+
+  <!-- Metric 3: Type Safety -->
+  <g transform="translate(520, 32)">
+    <circle cx="6" cy="-8" r="3" fill="#3178C6" class="pulse-dot"/>
+    <text x="16" y="-5" class="mono-tag" letter-spacing="0.5">TYPE INTEGRITY</text>
+    <text x="0" y="32" class="metric-num">Strict 100%</text>
+    <text x="0" y="54" class="metric-lbl">TypeScript 5 &amp; Go Structs</text>
+  </g>
+
+  <!-- Divider 3 -->
+  <line x1="710" y1="24" x2="710" y2="96" stroke="#e3e4e8" stroke-width="1"/>
+
+  <!-- Metric 4: Multi-Agent AI -->
+  <g transform="translate(740, 32)">
+    <circle cx="6" cy="-8" r="3" fill="#9f7aee" class="pulse-dot"/>
+    <text x="16" y="-5" class="mono-tag" letter-spacing="0.5">AUTONOMOUS</text>
+    <text x="0" y="32" class="metric-num">Multi-Agent</text>
+    <text x="0" y="54" class="metric-lbl">Event-Driven Workflows</text>
+  </g>
+</svg>

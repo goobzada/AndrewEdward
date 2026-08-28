@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://brancodev.com" target="_blank">
-    <img src="./assets/banner.png" width="100%" alt="Andrew Edward - Branco Dev Banner" />
+    <img src="./assets/halftone-banner.svg" width="100%" alt="Andrew Edward • Branco Dev - Halftone Architecture Map" />
   </a>
 </p>
 
 <h1 align="center">Hi, I'm Andrew Edward 👋</h1>
-<h3 align="center">Founder & Principal Systems Architect at <a href="https://brancodev.com" target="_blank">BRANCO DEV</a></h3>
+<h3 align="center">Principal Systems Architect & Founder at <a href="https://brancodev.com" target="_blank">BRANCO DEV</a></h3>
 
 <p align="center">
-  <strong>Senior Full Stack Software Engineer • AI Systems Architect • High-Concurrency SaaS Specialist</strong>
+  <strong>Senior Full Stack Engineer • AI Systems Architect • High-Concurrency SaaS Specialist</strong>
 </p>
 
 <p align="center">
@@ -17,29 +17,33 @@
 
 <p align="center">
   <a href="https://brancodev.com" target="_blank">
-    <img src="https://img.shields.io/badge/Official_Website-brancodev.com-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Official Website" />
+    <img src="https://img.shields.io/badge/Official_Website-brancodev.com-111a4a?style=for-the-badge&logo=googlechrome&logoColor=44b48b" alt="Official Website" />
   </a>
   <a href="https://github.com/goobzada" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-goobzada-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-goobzada-011821?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="mailto:grf87487@email.vccs.edu">
-    <img src="https://img.shields.io/badge/Direct_Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Direct_Email-Contact_Me-ec652b?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://brancodev.com/#contact" target="_blank">
-    <img src="https://img.shields.io/badge/Hire_Me-Start_a_Project-C6FF41?style=for-the-badge&logoColor=black" alt="Start a Project" />
+    <img src="https://img.shields.io/badge/Hire_Me-Start_a_Project-44b48b?style=for-the-badge&logoColor=011821" alt="Start a Project" />
   </a>
+</p>
+
+<p align="center">
+  <img src="./assets/metrics-card.svg" width="100%" alt="System & Performance Architecture Metrics" />
 </p>
 
 ---
 
-## ⚡ Executive Summary & Vision
+## ⚡ Executive Summary & Architectural Vision
 
 Senior Full Stack Software Engineer delivering high-performance web applications, bespoke multi-tenant SaaS platforms, autonomous AI agent pipelines, and high-concurrency cloud infrastructure for US and global tech enterprises.
 
 - 🌐 **Agency & Consultancy:** [BRANCO DEV (brancodev.com)](https://brancodev.com)
 - 📍 **Service Hubs:** United States (New York, Silicon Valley, Austin, Miami, Seattle, Boston, Chicago, Denver) & Global
 - 🎯 **Engineering Creed:** **BUILD • AUTOMATE • SCALE**
-- 🛡️ **Technical Standards:** Strictly typed architectures (TypeScript 5+ / Go), zero-downtime microservices, normalized database designs, and sub-100ms API response targets.
+- 🛡️ **Technical Standards:** Strictly typed architectures (TypeScript 5+ / Go), zero-downtime microservices, normalized database designs, and sub-12ms API response targets.
 
 ---
 
@@ -128,7 +132,6 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
   <img src="https://img.shields.io/badge/GitHub_Actions_CI/CD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/AWS_Cloud-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
 </p>
 
 ### 🗄️ Database Normalization & In-Memory Caching
@@ -201,10 +204,10 @@ graph LR
 ## 📊 Performance & Architecture Metrics
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Public_Repositories-30+-238636?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" />
-  <img src="https://img.shields.io/badge/Annual_Contributions-120+-F59E0B?style=for-the-badge&logo=git&logoColor=white" alt="Contributions" />
-  <img src="https://img.shields.io/badge/Core_Stack-Next.js_•_Go_•_PostgreSQL-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="Core Stack" />
-  <img src="https://img.shields.io/badge/Architecture-Clean_&_Microservices-C6FF41?style=for-the-badge&logoColor=black" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Public_Repositories-30+-111a4a?style=for-the-badge&logo=github&logoColor=44b48b" alt="Repositories" />
+  <img src="https://img.shields.io/badge/Annual_Contributions-120+-ec652b?style=for-the-badge&logo=git&logoColor=white" alt="Contributions" />
+  <img src="https://img.shields.io/badge/Core_Stack-Next.js_•_Go_•_PostgreSQL-167e6c?style=for-the-badge&logo=typescript&logoColor=white" alt="Core Stack" />
+  <img src="https://img.shields.io/badge/Architecture-Clean_&_Microservices-44b48b?style=for-the-badge&logoColor=011821" alt="Architecture" />
 </p>
 
 ---
