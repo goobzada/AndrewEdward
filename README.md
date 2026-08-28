@@ -89,7 +89,6 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain" />
   <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" />
   <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/Vector_DBs-0A0A0C?style=for-the-badge&logo=databricks&logoColor=white" alt="Vector DBs" />
   <img src="https://img.shields.io/badge/n8n_Automations-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
 </p>
 
@@ -101,7 +100,6 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </p>
@@ -200,11 +198,13 @@ graph LR
 
 ---
 
-## 📊 GitHub Contribution & Language Analytics
+## 📊 Performance & Architecture Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=goobzada&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=C6FF41" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=goobzada&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B" alt="Top Languages" />
+  <img src="https://img.shields.io/badge/Public_Repositories-30+-238636?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" />
+  <img src="https://img.shields.io/badge/Annual_Contributions-120+-F59E0B?style=for-the-badge&logo=git&logoColor=white" alt="Contributions" />
+  <img src="https://img.shields.io/badge/Core_Stack-Next.js_•_Go_•_PostgreSQL-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="Core Stack" />
+  <img src="https://img.shields.io/badge/Architecture-Clean_&_Microservices-C6FF41?style=for-the-badge&logoColor=black" alt="Architecture" />
 </p>
 
 ---
