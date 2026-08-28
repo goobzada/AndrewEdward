@@ -1,0 +1,377 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="stackBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080C"/>
+      <stop offset="50%" stop-color="#0F1424"/>
+      <stop offset="100%" stop-color="#08080C"/>
+    </linearGradient>
+
+    <!-- Spectrum Gradient for Map Grid -->
+    <linearGradient id="spectrumMap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d65620"/>
+      <stop offset="25%" stop-color="#ec652b"/>
+      <stop offset="50%" stop-color="#9f7aee"/>
+      <stop offset="75%" stop-color="#4575cd"/>
+      <stop offset="90%" stop-color="#44b48b"/>
+      <stop offset="100%" stop-color="#f4df69"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="stackGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes dashAnim {
+        from { stroke-dashoffset: 80; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes radarPulse {
+        0% { r: 3; opacity: 1; }
+        50% { r: 14; opacity: 0; }
+        100% { r: 3; opacity: 0; }
+      }
+
+      /* 5 Stacks Carousel (20s cycle - 4s per category) */
+      @keyframes fadeStack1 {
+        0%, 16% { opacity: 1; transform: translateY(0); }
+        20%, 96% { opacity: 0; transform: translateY(8px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fadeStack2 {
+        0%, 16% { opacity: 0; transform: translateY(-8px); }
+        20%, 36% { opacity: 1; transform: translateY(0); }
+        40%, 100% { opacity: 0; transform: translateY(8px); }
+      }
+      @keyframes fadeStack3 {
+        0%, 36% { opacity: 0; transform: translateY(-8px); }
+        40%, 56% { opacity: 1; transform: translateY(0); }
+        60%, 100% { opacity: 0; transform: translateY(8px); }
+      }
+      @keyframes fadeStack4 {
+        0%, 56% { opacity: 0; transform: translateY(-8px); }
+        60%, 76% { opacity: 1; transform: translateY(0); }
+        80%, 100% { opacity: 0; transform: translateY(8px); }
+      }
+      @keyframes fadeStack5 {
+        0%, 76% { opacity: 0; transform: translateY(-8px); }
+        80%, 96% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(8px); }
+      }
+
+      .stack-layer-1 { animation: fadeStack1 20s ease-in-out infinite; }
+      .stack-layer-2 { animation: fadeStack2 20s ease-in-out infinite; }
+      .stack-layer-3 { animation: fadeStack3 20s ease-in-out infinite; }
+      .stack-layer-4 { animation: fadeStack4 20s ease-in-out infinite; }
+      .stack-layer-5 { animation: fadeStack5 20s ease-in-out infinite; }
+
+      .flow-line { stroke-dasharray: 6, 6; animation: dashAnim 15s linear infinite; }
+      .node-pulse { animation: radarPulse 2.5s infinite ease-out; transform-origin: center; }
+
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .sans { font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Canvas Container -->
+  <rect width="960" height="320" rx="10" fill="url(#stackBgGrad)" stroke="#111a4a" stroke-width="1.5"/>
+
+  <!-- Halftone Map Dot Matrix Background -->
+  <g fill="url(#spectrumMap)" opacity="0.25">
+    <circle cx="80" cy="60" r="2.5"/><circle cx="100" cy="60" r="3"/><circle cx="120" cy="60" r="3"/><circle cx="140" cy="60" r="2.5"/><circle cx="160" cy="60" r="3"/><circle cx="180" cy="60" r="3.5"/><circle cx="200" cy="60" r="3"/>
+    <circle cx="80" cy="80" r="3"/><circle cx="100" cy="80" r="3.5"/><circle cx="120" cy="80" r="4"/><circle cx="140" cy="80" r="4"/><circle cx="160" cy="80" r="3.5"/><circle cx="180" cy="80" r="4"/><circle cx="200" cy="80" r="3.5"/>
+    <circle cx="100" cy="100" r="3.5"/><circle cx="120" cy="100" r="4"/><circle cx="140" cy="100" r="4"/><circle cx="160" cy="100" r="4"/><circle cx="180" cy="100" r="3.5"/><circle cx="200" cy="100" r="3"/>
+    <circle cx="120" cy="120" r="3"/><circle cx="140" cy="120" r="3.5"/><circle cx="160" cy="120" r="3.5"/><circle cx="180" cy="120" r="3"/><circle cx="200" cy="120" r="2.5"/>
+
+    <circle cx="440" cy="60" r="2.5"/><circle cx="460" cy="60" r="3"/><circle cx="480" cy="60" r="3"/><circle cx="500" cy="60" r="2.5"/><circle cx="520" cy="60" r="3"/><circle cx="540" cy="60" r="3.5"/>
+    <circle cx="420" cy="80" r="3"/><circle cx="440" cy="80" r="3.5"/><circle cx="460" cy="80" r="4"/><circle cx="480" cy="80" r="4"/><circle cx="500" cy="80" r="4"/><circle cx="520" cy="80" r="3.5"/>
+    <circle cx="440" cy="100" r="3.5"/><circle cx="460" cy="100" r="4"/><circle cx="480" cy="100" r="4"/><circle cx="500" cy="100" r="3.5"/><circle cx="520" cy="100" r="3"/>
+
+    <circle cx="720" cy="60" r="2.5"/><circle cx="740" cy="60" r="3"/><circle cx="760" cy="60" r="3"/><circle cx="780" cy="60" r="3"/><circle cx="800" cy="60" r="2.5"/>
+    <circle cx="700" cy="80" r="3"/><circle cx="720" cy="80" r="3.5"/><circle cx="740" cy="80" r="4"/><circle cx="760" cy="80" r="4"/><circle cx="780" cy="80" r="3.5"/><circle cx="800" cy="80" r="3"/>
+    <circle cx="720" cy="100" r="3.5"/><circle cx="740" cy="100" r="4"/><circle cx="760" cy="100" r="3.5"/><circle cx="780" cy="100" r="3"/>
+
+    <!-- Lower hemisphere points -->
+    <circle cx="200" cy="180" r="2.5"/><circle cx="220" cy="180" r="3"/><circle cx="240" cy="180" r="3"/>
+    <circle cx="220" cy="200" r="3.5"/><circle cx="240" cy="200" r="4"/><circle cx="260" cy="200" r="3"/>
+    <circle cx="220" cy="220" r="3"/><circle cx="240" cy="220" r="3.5"/><circle cx="260" cy="220" r="2.5"/>
+
+    <circle cx="780" cy="200" r="2.5"/><circle cx="800" cy="200" r="3"/><circle cx="820" cy="200" r="3"/>
+    <circle cx="800" cy="220" r="3.5"/><circle cx="820" cy="220" r="3"/><circle cx="840" cy="220" r="2.5"/>
+  </g>
+
+  <!-- Connective Data Arcs -->
+  <g fill="none" opacity="0.6">
+    <path d="M 120 100 Q 300 30 480 80" stroke="#ec652b" stroke-width="1.2" class="flow-line"/>
+    <path d="M 480 80 Q 640 40 760 100" stroke="#44b48b" stroke-width="1.2" class="flow-line"/>
+  </g>
+
+  <!-- Top Title Bar -->
+  <g transform="translate(40, 24)">
+    <circle cx="4" cy="10" r="4" fill="#c6ff41" class="node-pulse"/>
+    <circle cx="4" cy="10" r="2.5" fill="#c6ff41"/>
+    <text x="18" y="14" fill="#c6ff41" font-size="11" font-weight="600" class="mono" letter-spacing="1.5">LIVE ARCHITECTURAL CAPABILITIES</text>
+    <text x="880" y="14" text-anchor="end" fill="#7c7f88" font-size="10.5" class="mono">SWISS-TECH PRECISION // BRANCODEV</text>
+    <line x1="0" y1="28" x2="880" y2="28" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== SLIDE 1: AI & AGENTS ==================== -->
+  <g class="stack-layer-1" transform="translate(40, 72)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#ffffff" font-size="20" font-weight="700" class="sans">01. Autonomous AI, LLMs &amp; Multi-Agent Systems</text>
+    <text x="0" y="46" fill="#88888E" font-size="12" class="sans">Orchestrating autonomous workflows, RAG knowledge stores, and low-latency inference routing.</text>
+    
+    <!-- Badges Row 1 -->
+    <g transform="translate(0, 68)">
+      <!-- Badge OpenAI -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#412991" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#9f7aee"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">OpenAI API</text>
+      </g>
+      <!-- Badge Claude -->
+      <g transform="translate(142, 0)">
+        <rect width="170" height="38" rx="6" fill="#111a4a" stroke="#ec652b" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#ec652b"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Claude 3.5 Sonnet</text>
+      </g>
+      <!-- Badge LangChain -->
+      <g transform="translate(324, 0)">
+        <rect width="140" height="38" rx="6" fill="#111a4a" stroke="#167e6c" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#44b48b"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">LangChain</text>
+      </g>
+      <!-- Badge Ollama -->
+      <g transform="translate(476, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#ffffff"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Ollama Local</text>
+      </g>
+      <!-- Badge n8n -->
+      <g transform="translate(618, 0)">
+        <rect width="140" height="38" rx="6" fill="#111a4a" stroke="#ea4b71" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#ea4b71"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">n8n Automate</text>
+      </g>
+      <!-- Badge Vector DBs -->
+      <g transform="translate(770, 0)">
+        <rect width="110" height="38" rx="6" fill="#111a4a" stroke="#f4df69" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#f4df69"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Vector DBs</text>
+      </g>
+    </g>
+
+    <!-- Sub-Metrics Footer -->
+    <g transform="translate(0, 130)">
+      <rect width="880" height="32" rx="6" fill="#011821" stroke="#167e6c" stroke-width="1"/>
+      <text x="16" y="20" fill="#44b48b" font-size="11" class="mono">AGENT MATRIX: <tspan fill="#ffffff">ReAct Framework • Semantic Caching • Tool Calling • Multimodal Vision</tspan></text>
+      <text x="864" y="20" text-anchor="end" fill="#c6ff41" font-size="11" font-weight="600" class="mono">STATUS: OPTIMIZED</text>
+    </g>
+  </g>
+
+  <!-- ==================== SLIDE 2: FRONTEND & UI/UX ==================== -->
+  <g class="stack-layer-2" transform="translate(40, 72)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#ffffff" font-size="20" font-weight="700" class="sans">02. Frontend Precision &amp; Editorial Web Architecture</text>
+    <text x="0" y="46" fill="#88888E" font-size="12" class="sans">Next.js 16 App Router, React 19 Server Components, bespoke micro-interactions &amp; fluid motion.</text>
+    
+    <!-- Badges Row -->
+    <g transform="translate(0, 68)">
+      <g transform="translate(0, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#ffffff"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Next.js 16</text>
+      </g>
+      <g transform="translate(142, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#61DAFB" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#61DAFB"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">React 19</text>
+      </g>
+      <g transform="translate(284, 0)">
+        <rect width="150" height="38" rx="6" fill="#111a4a" stroke="#3178C6" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#3178C6"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">TypeScript 5.7</text>
+      </g>
+      <g transform="translate(446, 0)">
+        <rect width="145" height="38" rx="6" fill="#111a4a" stroke="#06B6D4" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#06B6D4"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Tailwind CSS</text>
+      </g>
+      <g transform="translate(603, 0)">
+        <rect width="120" height="38" rx="6" fill="#111a4a" stroke="#646CFF" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#646CFF"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Vite Bundler</text>
+      </g>
+      <g transform="translate(735, 0)">
+        <rect width="145" height="38" rx="6" fill="#111a4a" stroke="#0055FF" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#0055FF"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Framer Motion</text>
+      </g>
+    </g>
+
+    <!-- Sub-Metrics Footer -->
+    <g transform="translate(0, 130)">
+      <rect width="880" height="32" rx="6" fill="#011821" stroke="#3178C6" stroke-width="1"/>
+      <text x="16" y="20" fill="#61DAFB" font-size="11" class="mono">UI CORE: <tspan fill="#ffffff">Server Components • 100/100 Core Web Vitals • Responsive Breakpoints • Zero-CLS</tspan></text>
+      <text x="864" y="20" text-anchor="end" fill="#c6ff41" font-size="11" font-weight="600" class="mono">SCORE: 100%</text>
+    </g>
+  </g>
+
+  <!-- ==================== SLIDE 3: BACKEND & HIGH CONCURRENCY ==================== -->
+  <g class="stack-layer-3" transform="translate(40, 72)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#ffffff" font-size="20" font-weight="700" class="sans">03. High-Concurrency Backend &amp; Microservices</text>
+    <text x="0" y="46" fill="#88888E" font-size="12" class="sans">High-throughput Go routines, Node.js clusters, Python FastAPI &amp; asynchronous event streaming.</text>
+    
+    <!-- Badges Row -->
+    <g transform="translate(0, 68)">
+      <g transform="translate(0, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#00ADD8" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#00ADD8"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Go (Golang)</text>
+      </g>
+      <g transform="translate(142, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#339933" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#339933"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Node.js</text>
+      </g>
+      <g transform="translate(284, 0)">
+        <rect width="140" height="38" rx="6" fill="#111a4a" stroke="#3776AB" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#3776AB"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">FastAPI Py</text>
+      </g>
+      <g transform="translate(436, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#777BB4" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#777BB4"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">PHP 8 / Laravel</text>
+      </g>
+      <g transform="translate(578, 0)">
+        <rect width="145" height="38" rx="6" fill="#111a4a" stroke="#E10098" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#E10098"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">GraphQL / REST</text>
+      </g>
+      <g transform="translate(735, 0)">
+        <rect width="145" height="38" rx="6" fill="#111a4a" stroke="#244C5A" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#44b48b"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">gRPC &amp; Sockets</text>
+      </g>
+    </g>
+
+    <!-- Sub-Metrics Footer -->
+    <g transform="translate(0, 130)">
+      <rect width="880" height="32" rx="6" fill="#011821" stroke="#00ADD8" stroke-width="1"/>
+      <text x="16" y="20" fill="#00ADD8" font-size="11" class="mono">THROUGHPUT: <tspan fill="#ffffff">Goroutine Concurrency • Sub-12ms Response • Strict Type Schema • Event Queues</tspan></text>
+      <text x="864" y="20" text-anchor="end" fill="#c6ff41" font-size="11" font-weight="600" class="mono">LATENCY: &lt;12MS</text>
+    </g>
+  </g>
+
+  <!-- ==================== SLIDE 4: CLOUD & DEVOPS ==================== -->
+  <g class="stack-layer-4" transform="translate(40, 72)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#ffffff" font-size="20" font-weight="700" class="sans">04. Cloud Infrastructure, DevOps &amp; Edge Security</text>
+    <text x="0" y="46" fill="#88888E" font-size="12" class="sans">Multi-region container orchestration, hardened Linux environments, and automated CI/CD.</text>
+    
+    <!-- Badges Row -->
+    <g transform="translate(0, 68)">
+      <g transform="translate(0, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#2496ED" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#2496ED"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Docker Engine</text>
+      </g>
+      <g transform="translate(142, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#326CE5" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#326CE5"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Kubernetes</text>
+      </g>
+      <g transform="translate(284, 0)">
+        <rect width="150" height="38" rx="6" fill="#111a4a" stroke="#F38020" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#F38020"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Cloudflare Edge</text>
+      </g>
+      <g transform="translate(446, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#FCC624" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#FCC624"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Linux Debian</text>
+      </g>
+      <g transform="translate(588, 0)">
+        <rect width="135" height="38" rx="6" fill="#111a4a" stroke="#2088FF" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#2088FF"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">GitHub CI/CD</text>
+      </g>
+      <g transform="translate(735, 0)">
+        <rect width="145" height="38" rx="6" fill="#111a4a" stroke="#232F3E" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#ec652b"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">AWS Cloud</text>
+      </g>
+    </g>
+
+    <!-- Sub-Metrics Footer -->
+    <g transform="translate(0, 130)">
+      <rect width="880" height="32" rx="6" fill="#011821" stroke="#F38020" stroke-width="1"/>
+      <text x="16" y="20" fill="#F38020" font-size="11" class="mono">INFRA: <tspan fill="#ffffff">Zero-Downtime Deployments • DDoS Mitigation • SSL/TLS 1.3 Hardening • Auto-Scaling</tspan></text>
+      <text x="864" y="20" text-anchor="end" fill="#c6ff41" font-size="11" font-weight="600" class="mono">UPTIME: 99.999%</text>
+    </g>
+  </g>
+
+  <!-- ==================== SLIDE 5: DATABASES & CACHING ==================== -->
+  <g class="stack-layer-5" transform="translate(40, 72)">
+    <!-- Header -->
+    <text x="0" y="24" fill="#ffffff" font-size="20" font-weight="700" class="sans">05. Database Normalization &amp; In-Memory Caching</text>
+    <text x="0" y="46" fill="#88888E" font-size="12" class="sans">ACID compliance, multi-tenant partitioning, sub-millisecond Redis caches &amp; ORM type safety.</text>
+    
+    <!-- Badges Row -->
+    <g transform="translate(0, 68)">
+      <g transform="translate(0, 0)">
+        <rect width="140" height="38" rx="6" fill="#111a4a" stroke="#4169E1" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#4169E1"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">PostgreSQL 16</text>
+      </g>
+      <g transform="translate(152, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#4479A1" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#4479A1"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">MySQL 8</text>
+      </g>
+      <g transform="translate(294, 0)">
+        <rect width="135" height="38" rx="6" fill="#111a4a" stroke="#DC382D" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#DC382D"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Redis Cluster</text>
+      </g>
+      <g transform="translate(441, 0)">
+        <rect width="130" height="38" rx="6" fill="#111a4a" stroke="#47A248" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#47A248"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">MongoDB</text>
+      </g>
+      <g transform="translate(583, 0)">
+        <rect width="135" height="38" rx="6" fill="#111a4a" stroke="#3ECF8E" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#3ECF8E"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Supabase DB</text>
+      </g>
+      <g transform="translate(730, 0)">
+        <rect width="150" height="38" rx="6" fill="#111a4a" stroke="#2D3748" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="4" fill="#ffffff"/>
+        <text x="30" y="23" fill="#ffffff" font-size="12" font-weight="600" class="sans">Prisma / Drizzle</text>
+      </g>
+    </g>
+
+    <!-- Sub-Metrics Footer -->
+    <g transform="translate(0, 130)">
+      <rect width="880" height="32" rx="6" fill="#011821" stroke="#4169E1" stroke-width="1"/>
+      <text x="16" y="20" fill="#4169E1" font-size="11" class="mono">DATA INTEGRITY: <tspan fill="#ffffff">Third Normal Form • Sharded Connection Pooling • Automated Backups • Read Replicas</tspan></text>
+      <text x="864" y="20" text-anchor="end" fill="#c6ff41" font-size="11" font-weight="600" class="mono">ACID: ENFORCED</text>
+    </g>
+  </g>
+
+  <!-- Bottom Indicator Dots -->
+  <g transform="translate(440, 290)">
+    <circle cx="0" cy="0" r="3" fill="#ec652b"/>
+    <circle cx="20" cy="0" r="3" fill="#9f7aee"/>
+    <circle cx="40" cy="0" r="3" fill="#4575cd"/>
+    <circle cx="60" cy="0" r="3" fill="#44b48b"/>
+    <circle cx="80" cy="0" r="3" fill="#f4df69"/>
+  </g>
+</svg>

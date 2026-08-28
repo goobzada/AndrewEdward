@@ -84,7 +84,11 @@ Senior Full Stack Software Engineer delivering high-performance web applications
 
 ---
 
-## 🛠️ Complete Engineering Arsenal
+## 🛠️ Dynamic Engineering Arsenal & Stacks
+
+<p align="center">
+  <img src="./assets/animated-tech-stacks.svg" width="100%" alt="Dynamic Animated Tech Stacks on Halftone Map" />
+</p>
 
 ### ⚡ AI, LLMs & Intelligent Workflows
 <p align="left">
@@ -146,39 +150,53 @@ Senior Full Stack Software Engineer delivering high-performance web applications
 
 ---
 
-## 📁 Featured Case Studies & Production Architectures
+## 📁 5 Featured Case Studies & Production Architectures
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🚀 01 — BillLaunch SaaS</h3>
-      <p><strong>Enterprise Billing & Invoicing Engine</strong></p>
-      <p>Multi-tenant automated billing, customer subscription management, and financial audit dashboard engineered for high-concurrency enterprise workflows.</p>
-      <p><em>Tech: Next.js 16, TypeScript, PostgreSQL, Stripe Engine, Redis</em></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛰️ 02 — InfraForge OS</h3>
-      <p><strong>Autonomous AI Development Operating System</strong></p>
-      <p>Platform designed to orchestrate AI agents, cloud infrastructure, database provisioning, and deployment pipelines across multiple tech stacks.</p>
+      <h3>🚀 01 — InfraForge OS</h3>
+      <p><strong>Autonomous AI Development & Infrastructure OS</strong></p>
+      <p>Platform designed to orchestrate autonomous AI agents, infrastructure provisioning, multi-tenant databases, and CI/CD pipelines across multiple tech stacks.</p>
+      <p><em>Tech: TypeScript, Go, Docker, PostgreSQL, Claude AI</em></p>
       <p>
         <a href="https://github.com/goobzada/AndrewEdward">
-          <img src="https://img.shields.io/badge/View_Repo-000000?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
+          <img src="https://img.shields.io/badge/View_Repo-011821?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
         </a>
       </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💳 02 — BillLaunch SaaS</h3>
+      <p><strong>Enterprise Billing & Invoicing Engine</strong></p>
+      <p>Multi-tenant automated billing, customer subscription management, and financial audit dashboard engineered for high-concurrency enterprise workflows ($2.4M+ volume).</p>
+      <p><em>Tech: Next.js 16, TypeScript, PostgreSQL, Stripe Engine, Redis</em></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🚛 03 — AeroLogistics AI</h3>
-      <p><strong>Real-Time Fleet & Dispatch Engine</strong></p>
-      <p>Autonomous logistics routing, dynamic telematics aggregation, predictive scheduling, and real-time fleet coordination under high event throughput.</p>
-      <p><em>Tech: Go (Golang), WebSockets, PostGIS, Docker, Kafka</em></p>
+      <p><strong>Real-Time Fleet & Telematics Dispatch Engine</strong></p>
+      <p>Autonomous logistics routing, dynamic telematics aggregation (1.8M events/sec), predictive scheduling, and real-time fleet coordination.</p>
+      <p><em>Tech: Go (Golang), gRPC, WebSockets, PostGIS, Docker, Kafka</em></p>
     </td>
     <td width="50%" valign="top">
       <h3>🏢 04 — ClientOps Portal</h3>
-      <p><strong>High-Traffic Enterprise Portal</strong></p>
-      <p>High-throughput client management platform with real-time analytics, automated onboarding, and encrypted document compliance pipelines.</p>
+      <p><strong>High-Traffic Enterprise Client Hub</strong></p>
+      <p>High-throughput client management platform with zero-knowledge 256-bit AES encryption, real-time analytics, and automated SOC2/GDPR compliance pipelines.</p>
       <p><em>Tech: React 19, Node.js Microservices, Redis Caching, AWS S3</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🌐 05 — OmniRoute AI Gateway</h3>
+      <p><strong>Multi-LLM Load Balancer & Intelligent Routing Engine</strong></p>
+      <p>Unified enterprise AI gateway routing queries across 500+ models with dynamic failover, latency optimization (18ms TTFT), and semantic token caching.</p>
+      <p><em>Tech: TypeScript, Python FastAPI, Redis Semantic Cache, Claude 3.5, OpenAI, Ollama</em></p>
+      <p>
+        <a href="https://github.com/goobzada">
+          <img src="https://img.shields.io/badge/Explore_Projects-111a4a?style=flat-square&logo=github&logoColor=44b48b" alt="Explore Projects" />
+        </a>
+      </p>
     </td>
   </tr>
 </table>
