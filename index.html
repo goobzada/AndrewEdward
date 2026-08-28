@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Edward — Senior Full Stack & AI Systems Architect | Branco Dev</title>
+  <meta name="description" content="Engineering high-concurrency SaaS platforms, autonomous AI systems, and modern cloud infrastructure. Column-grade institutional engineering for high-impact tech enterprises." />
+  
+  <!-- Fonts: Inter + JetBrains Mono for authentic SuisseIntl & SFMono rendering -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Top Fixed Navigation -->
+  <header id="navbar" class="fixed-nav">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-mark"></span>
+        <span class="brand-name">BRANCO DEV</span>
+      </a>
+
+      <nav class="nav-links">
+        <button class="nav-pill" onclick="scrollToSection('hero')">Overview</button>
+        <button class="nav-pill" onclick="scrollToSection('architecture')">Architecture</button>
+        <button class="nav-pill" onclick="scrollToSection('projects')">Case Studies</button>
+        <button class="nav-pill" onclick="scrollToSection('stack')">Capabilities</button>
+        <button class="nav-pill" onclick="scrollToSection('contact')">Company</button>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://brancodev.com" target="_blank" class="nav-link-subtle">brancodev.com ↗</a>
+        <a href="#contact" class="btn-primary-sm">Start a project <span class="arrow">›</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Interactive Halftone Canvas -->
+  <section id="hero" class="hero-section">
+    <!-- Interactive Canvas with Mouse Particle Wave -->
+    <canvas id="halftoneCanvas" class="halftone-bg"></canvas>
+
+    <div class="hero-content max-w-container">
+      <!-- Left Column: Copy & CTAs -->
+      <div class="hero-left">
+        <!-- FDIC / Trust Badge -->
+        <div class="trust-badge">
+          <span class="pulse-indicator"></span>
+          <span class="badge-text">USA &amp; GLOBAL // SWISS-TECH ARCHITECTURE</span>
+        </div>
+
+        <h1 class="hero-title">
+          Build, automate, and scale intelligent systems
+        </h1>
+
+        <p class="hero-subtitle">
+          Senior full-stack engineering and custom SaaS architecture designed to orchestrate AI agents, high-concurrency microservices, and modern cloud infrastructure.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn-primary">
+            Start a project <span class="arrow">›</span>
+          </a>
+          <a href="#projects" class="btn-secondary">
+            Explore case studies
+          </a>
+        </div>
+
+        <div class="hero-meta-strip">
+          <div class="meta-item">
+            <span class="meta-dot seafoam"></span>
+            <span>TypeScript 5 &amp; Go</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-dot orange"></span>
+            <span>Sub-12ms Latency</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-dot violet"></span>
+            <span>Multi-Agent AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive 3D Floating Transaction / Architecture Card -->
+      <div class="hero-right">
+        <div id="interactiveCard" class="column-card tilt-widget">
+          <!-- Card Header & Project Switcher Tabs -->
+          <div class="card-header">
+            <div class="project-info">
+              <div class="project-avatar" id="widgetAvatar">
+                <span class="avatar-icon">⚡</span>
+              </div>
+              <div>
+                <h3 class="project-title" id="widgetTitle">InfraForge OS</h3>
+                <span class="project-sub" id="widgetSub">Autonomous AI Cluster</span>
+              </div>
+            </div>
+            <div class="status-pill" id="widgetStatusPill">
+              <span class="status-dot"></span>
+              <span id="widgetStatusText">HEALTHY</span>
+            </div>
+          </div>
+
+          <!-- Featured Metric Banner (Column Signal Orange Surface) -->
+          <div class="featured-metric-banner" id="widgetBanner">
+            <div class="banner-label" id="widgetBannerLabel">GLOBAL AI ROUTING &amp; DISPATCH</div>
+            <div class="banner-value" id="widgetBannerValue">
+              99.999% <span class="banner-unit">Uptime</span>
+            </div>
+            <!-- Sparkline Chart -->
+            <svg class="sparkline" viewBox="0 0 100 24" fill="none">
+              <path d="M0 16 Q 25 4, 50 14 T 100 8" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <!-- Project Selector Chips -->
+          <div class="project-chips">
+            <button class="chip active" onclick="switchProject(0)">01 InfraForge</button>
+            <button class="chip" onclick="switchProject(1)">02 BillLaunch</button>
+            <button class="chip" onclick="switchProject(2)">03 AeroLogistics</button>
+            <button class="chip" onclick="switchProject(3)">04 ClientOps</button>
+            <button class="chip" onclick="switchProject(4)">05 OmniRoute</button>
+          </div>
+
+          <!-- Live Code Snippet in SFMono / Seafoam Tint -->
+          <div class="code-terminal">
+            <div class="code-header">
+              <span class="code-file" id="widgetCodeFile">api/v1/orchestrator.json</span>
+              <button class="copy-btn" onclick="copyCodeSnippet()">Copy JSON</button>
+            </div>
+            <pre class="code-body" id="widgetCodeBody"><code>{
+  <span class="json-key">"cluster_id"</span>: <span class="json-str">"infra-us-east-01"</span>,
+  <span class="json-key">"status"</span>: <span class="json-str">"ACTIVE_ROUTING"</span>,
+  <span class="json-key">"telemetry"</span>: {
+    <span class="json-key">"avg_latency"</span>: <span class="json-num">11.4</span>,
+    <span class="json-key">"active_shards"</span>: <span class="json-num">64</span>,
+    <span class="json-key">"encryption"</span>: <span class="json-str">"TLS_1.3_mTLS"</span>
+  }
+}</code></pre>
+          </div>
+
+          <!-- Telemetry Specs Footer -->
+          <div class="card-telemetry">
+            <div class="telem-row">
+              <span class="telem-label" id="telemLabel1">Average Execution Speed</span>
+              <span class="telem-val seafoam" id="telemVal1">11.4 ms</span>
+            </div>
+            <div class="telem-row">
+              <span class="telem-label" id="telemLabel2">Active Node Infrastructure</span>
+              <span class="telem-val navy" id="telemVal2">64 Multi-Tenant Nodes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Stats Bar (Column 4-Column Seafoam Row) -->
+  <section class="stats-section">
+    <div class="max-w-container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">99.999%</div>
+          <div class="stat-label">High-Concurrency SLA Uptime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">&lt; 12ms</div>
+          <div class="stat-label">Average Edge API Response</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Strict 100%</div>
+          <div class="stat-label">Type Integrity (TypeScript &amp; Go)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Supported AI Inference Models</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto Section -->
+  <section class="manifesto-section">
+    <div class="max-w-container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>MANIFESTO &amp; PHILOSOPHY</span>
+      </div>
+
+      <h2 class="manifesto-headline">
+        We don't build templates. <br />
+        <span class="text-steel">We engineer digital legacies.</span>
+      </h2>
+
+      <div class="manifesto-grid">
+        <p class="manifesto-lead">
+          Modern software development requires more than dragging generic components onto a canvas. Every architecture built by Andrew Edward at Branco Dev is engineered from the ground up for high concurrency, zero downtime, and editorial clarity.
+        </p>
+        <p class="manifesto-body">
+          Whether constructing a multi-tenant billing engine, autonomous LLM agent networks, or ultra-low-latency APIs in Go, we pair rigorous backend typing with fluid motion and human-centered design.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Architectural Pillars -->
+  <section id="architecture" class="pillars-section">
+    <div class="max-w-container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>ENGINEERING SPECIALIZATIONS</span>
+      </div>
+      <h2 class="section-heading">Systems Engineered for Concurrency &amp; Scale</h2>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1 -->
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h3 class="pillar-title">Custom SaaS Architecture</h3>
+          <p class="pillar-desc">Multi-tenant database partitioning, automated Stripe &amp; LemonSqueezy subscription engines, RBAC authorization, and high-volume background queues.</p>
+          <div class="pillar-tags">
+            <span class="tech-tag">Next.js 16</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Stripe</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card">
+          <div class="pillar-num">02</div>
+          <h3 class="pillar-title">Autonomous AI &amp; Agents</h3>
+          <p class="pillar-desc">Multi-agent orchestration, RAG semantic search pipelines, local model execution with Ollama, vector embeddings, and autonomous task pipelines.</p>
+          <div class="pillar-tags">
+            <span class="tech-tag">Claude 3.5</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Vector DBs</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar-card">
+          <div class="pillar-num">03</div>
+          <h3 class="pillar-title">High-Concurrency Backends</h3>
+          <p class="pillar-desc">Go routines, Node.js microservices, and Python FastAPI endpoints delivering sub-12ms latency with strict type schemas and connection pooling.</p>
+          <div class="pillar-tags">
+            <span class="tech-tag">Go (Golang)</span>
+            <span class="tech-tag">gRPC</span>
+            <span class="tech-tag">Redis Cluster</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="pillar-card">
+          <div class="pillar-num">04</div>
+          <h3 class="pillar-title">Cloud DevOps &amp; Edge Security</h3>
+          <p class="pillar-desc">Kubernetes clusters, Docker containers, Cloudflare Edge security, automated GitHub Actions CI/CD, and hardened Linux infrastructure.</p>
+          <div class="pillar-tags">
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Cloudflare</span>
+            <span class="tech-tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Featured Case Studies Section -->
+  <section id="projects" class="projects-section">
+    <div class="max-w-container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>PRODUCTION CASE STUDIES</span>
+      </div>
+      <h2 class="section-heading">Featured Systems &amp; Deployments</h2>
+
+      <div class="case-study-list">
+        <!-- Study 1 -->
+        <div class="case-card">
+          <div class="case-content">
+            <div class="case-category">AUTONOMOUS DEV OPERATING SYSTEM</div>
+            <h3 class="case-title">InfraForge OS</h3>
+            <p class="case-desc">An autonomous platform designed to orchestrate AI development agents, cloud server provisioning, multi-tenant databases, and deployment pipelines across technology stacks.</p>
+            <div class="case-specs">
+              <div class="spec-badge"><span class="spec-k">Latency</span> <span class="spec-v">11.4ms</span></div>
+              <div class="spec-badge"><span class="spec-k">Stack</span> <span class="spec-v">TypeScript • Go • Docker</span></div>
+              <div class="spec-badge"><span class="spec-k">Status</span> <span class="spec-v">Production Active</span></div>
+            </div>
+            <a href="https://github.com/goobzada/AndrewEdward" target="_blank" class="btn-outlined-sm">Explore Repository ↗</a>
+          </div>
+          <div class="case-visual">
+            <div class="mock-terminal">
+              <div class="term-dots"><span class="t-red"></span><span class="t-yellow"></span><span class="t-green"></span><span class="term-title">infraforge/agent-runner.go</span></div>
+              <pre><code>func RunPipeline(ctx Context) (*Cluster, error) {
+    agents := InitMultiAgentCluster(ctx)
+    return agents.DeployZeroDowntime()
+}</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study 2 -->
+        <div class="case-card">
+          <div class="case-content">
+            <div class="case-category">ENTERPRISE BILLING &amp; INVOICING ENGINE</div>
+            <h3 class="case-title">BillLaunch SaaS</h3>
+            <p class="case-desc">Multi-tenant automated billing, customer subscription management, and financial audit dashboard engineered for high-concurrency enterprise workflows ($2.4M+ volume).</p>
+            <div class="case-specs">
+              <div class="spec-badge"><span class="spec-k">Volume</span> <span class="spec-v">$2.4M+ Processed</span></div>
+              <div class="spec-badge"><span class="spec-k">Stack</span> <span class="spec-v">Next.js 16 • Stripe • PostgreSQL</span></div>
+            </div>
+            <a href="https://brancodev.com" target="_blank" class="btn-outlined-sm">View Case Study ↗</a>
+          </div>
+          <div class="case-visual">
+            <div class="mock-terminal">
+              <div class="term-dots"><span class="t-red"></span><span class="t-yellow"></span><span class="t-green"></span><span class="term-title">billlaunch/billing.ts</span></div>
+              <pre><code>const subscription = await stripe.subscriptions.create({
+  customer: tenant.customerId,
+  items: [{ price: plan.tier_enterprise }],
+  proration_behavior: 'always_invoice'
+});</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study 3 -->
+        <div class="case-card">
+          <div class="case-content">
+            <div class="case-category">REAL-TIME FLEET TELEMATICS</div>
+            <h3 class="case-title">AeroLogistics AI</h3>
+            <p class="case-desc">Autonomous logistics routing, dynamic telematics aggregation (1.8M events/sec), predictive scheduling, and real-time fleet coordination under continuous throughput.</p>
+            <div class="case-specs">
+              <div class="spec-badge"><span class="spec-k">Events</span> <span class="spec-v">1.8M Events/s</span></div>
+              <div class="spec-badge"><span class="spec-k">Stack</span> <span class="spec-v">Go • WebSockets • PostGIS • Kafka</span></div>
+            </div>
+            <a href="https://brancodev.com" target="_blank" class="btn-outlined-sm">View Fleet Demo ↗</a>
+          </div>
+          <div class="case-visual">
+            <div class="mock-terminal">
+              <div class="term-dots"><span class="t-red"></span><span class="t-yellow"></span><span class="t-green"></span><span class="term-title">aerologistics/dispatcher.go</span></div>
+              <pre><code>go func(stream &lt;-chan TelemetryPacket) {
+    for packet := range stream {
+        router.RecalculateOptimumPath(packet)
+    }
+}(telemetryChannel)</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Tech Stack Badges Section -->
+  <section id="stack" class="stack-section">
+    <div class="max-w-container">
+      <div class="section-tag">
+        <span class="tag-dot"></span>
+        <span>ENGINEERING ARSENAL</span>
+      </div>
+      <h2 class="section-heading">Curated Technologies &amp; Standards</h2>
+
+      <div class="stack-categories-grid">
+        <!-- Cat 1 -->
+        <div class="stack-box">
+          <h4 class="stack-cat-title">⚡ AI, LLMs &amp; Automation</h4>
+          <div class="badges-wrap">
+            <span class="badge-chip">OpenAI API</span>
+            <span class="badge-chip highlight">Claude 3.5 Sonnet</span>
+            <span class="badge-chip">LangChain</span>
+            <span class="badge-chip">Ollama Local</span>
+            <span class="badge-chip">Hugging Face</span>
+            <span class="badge-chip">Vector DBs (Qdrant/Pinecone)</span>
+            <span class="badge-chip">n8n Workflow Automation</span>
+          </div>
+        </div>
+
+        <!-- Cat 2 -->
+        <div class="stack-box">
+          <h4 class="stack-cat-title">💻 Frontend &amp; Web Engineering</h4>
+          <div class="badges-wrap">
+            <span class="badge-chip highlight">Next.js 16 App Router</span>
+            <span class="badge-chip">React 19</span>
+            <span class="badge-chip">TypeScript 5.7 Strict</span>
+            <span class="badge-chip">Tailwind CSS</span>
+            <span class="badge-chip">Vite</span>
+            <span class="badge-chip">Framer Motion</span>
+            <span class="badge-chip">HTML5 / CSS3 / Canvas</span>
+          </div>
+        </div>
+
+        <!-- Cat 3 -->
+        <div class="stack-box">
+          <h4 class="stack-cat-title">⚙️ Backend &amp; High-Concurrency</h4>
+          <div class="badges-wrap">
+            <span class="badge-chip highlight">Go (Golang)</span>
+            <span class="badge-chip">Node.js</span>
+            <span class="badge-chip">Python FastAPI</span>
+            <span class="badge-chip">PHP 8 / Laravel</span>
+            <span class="badge-chip">RESTful APIs</span>
+            <span class="badge-chip">GraphQL</span>
+            <span class="badge-chip">gRPC &amp; WebSockets</span>
+          </div>
+        </div>
+
+        <!-- Cat 4 -->
+        <div class="stack-box">
+          <h4 class="stack-cat-title">☁️ Cloud, DevOps &amp; Databases</h4>
+          <div class="badges-wrap">
+            <span class="badge-chip">Docker</span>
+            <span class="badge-chip">Kubernetes</span>
+            <span class="badge-chip highlight">Cloudflare Enterprise</span>
+            <span class="badge-chip">Linux Debian/Ubuntu</span>
+            <span class="badge-chip">PostgreSQL 16</span>
+            <span class="badge-chip">Redis Cluster</span>
+            <span class="badge-chip">MySQL 8</span>
+            <span class="badge-chip">Supabase</span>
+            <span class="badge-chip">AWS Cloud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Call to Action -->
+  <section id="contact" class="cta-section">
+    <div class="max-w-container">
+      <div class="cta-box">
+        <div class="cta-left">
+          <div class="section-tag light">
+            <span class="tag-dot orange"></span>
+            <span>LET'S TALK ARCHITECTURE</span>
+          </div>
+          <h2 class="cta-title">Ready to build something extraordinary?</h2>
+          <p class="cta-desc">
+            Available for select engineering contracts, SaaS platform builds, AI automation architectures, and high-concurrency systems consulting.
+          </p>
+          <div class="cta-direct-links">
+            <a href="mailto:grf87487@email.vccs.edu" class="cta-contact-item">
+              <span class="icon">✉️</span> grf87487@email.vccs.edu
+            </a>
+            <a href="https://brancodev.com" target="_blank" class="cta-contact-item">
+              <span class="icon">🌐</span> brancodev.com
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-right">
+          <a href="https://brancodev.com/#contact" target="_blank" class="btn-orange-lg">
+            Start a project with Branco Dev <span class="arrow">›</span>
+          </a>
+          <span class="cta-note">Serving clients across US tech hubs and worldwide.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="max-w-container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">BRANCO DEV</span>
+        <span class="footer-copy">© 2026 Andrew Edward. Engineered with Swiss-Tech precision.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/goobzada" target="_blank">GitHub</a>
+        <a href="https://brancodev.com" target="_blank">Website</a>
+        <a href="mailto:grf87487@email.vccs.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript with Canvas Mouse Particle Waves & 3D Card Tilt -->
+  <script src="./app.js"></script>
+</body>
+</html>
