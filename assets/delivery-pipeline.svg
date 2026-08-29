@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f8fa"/>
+    </linearGradient>
+
+    <linearGradient id="pipeFlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec652b"/>
+      <stop offset="33%" stop-color="#9f7aee"/>
+      <stop offset="66%" stop-color="#4575cd"/>
+      <stop offset="100%" stop-color="#44b48b"/>
+    </linearGradient>
+
+    <filter id="pipeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#111a4a" flood-opacity="0.04"/>
+    </filter>
+
+    <style>
+      @keyframes dashFlowPipe {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseStep {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; }
+      }
+      .flow-track { stroke-dasharray: 4, 4; animation: dashFlowPipe 4s linear infinite; }
+      .step-pulse { animation: pulseStep 3s infinite ease-in-out; }
+      .mono-t { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .sans-t { font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Step 1 Card -->
+  <g transform="translate(10, 15)" filter="url(#pipeShadow)">
+    <rect width="210" height="96" rx="8" fill="url(#pipeCardBg)" stroke="#e3e4e8" stroke-width="1"/>
+    <rect x="14" y="14" width="28" height="20" rx="4" fill="#111a4a"/>
+    <text x="28" y="28" text-anchor="middle" fill="#c6ff41" font-size="10" font-weight="700" class="mono-t">01</text>
+    <text x="50" y="28" fill="#111a4a" font-size="12.5" font-weight="600" class="sans-t">Discovery &amp; Spec</text>
+    <text x="14" y="58" fill="#7c7f88" font-size="11" class="sans-t">Technical blueprinting &amp;</text>
+    <text x="14" y="74" fill="#7c7f88" font-size="11" class="sans-t">data normalization</text>
+  </g>
+
+  <!-- Connector 1 -->
+  <g transform="translate(222, 60)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#ec652b" stroke-width="2" class="flow-track"/>
+    <polygon points="30,-3 36,0 30,3" fill="#ec652b"/>
+  </g>
+
+  <!-- Step 2 Card -->
+  <g transform="translate(260, 15)" filter="url(#pipeShadow)">
+    <rect width="210" height="96" rx="8" fill="url(#pipeCardBg)" stroke="#e3e4e8" stroke-width="1"/>
+    <rect x="14" y="14" width="28" height="20" rx="4" fill="#111a4a"/>
+    <text x="28" y="28" text-anchor="middle" fill="#ec652b" font-size="10" font-weight="700" class="mono-t">02</text>
+    <text x="50" y="28" fill="#111a4a" font-size="12.5" font-weight="600" class="sans-t">Core Backend Engine</text>
+    <text x="14" y="58" fill="#7c7f88" font-size="11" class="sans-t">Go &amp; Node microservices,</text>
+    <text x="14" y="74" fill="#167e6c" font-size="11" font-weight="600" class="mono-t">PostgreSQL + Redis &lt;12ms</text>
+  </g>
+
+  <!-- Connector 2 -->
+  <g transform="translate(472, 60)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#9f7aee" stroke-width="2" class="flow-track"/>
+    <polygon points="30,-3 36,0 30,3" fill="#9f7aee"/>
+  </g>
+
+  <!-- Step 3 Card -->
+  <g transform="translate(510, 15)" filter="url(#pipeShadow)">
+    <rect width="210" height="96" rx="8" fill="url(#pipeCardBg)" stroke="#e3e4e8" stroke-width="1"/>
+    <rect x="14" y="14" width="28" height="20" rx="4" fill="#111a4a"/>
+    <text x="28" y="28" text-anchor="middle" fill="#9f7aee" font-size="10" font-weight="700" class="mono-t">03</text>
+    <text x="50" y="28" fill="#111a4a" font-size="12.5" font-weight="600" class="sans-t">Frontend Precision</text>
+    <text x="14" y="58" fill="#7c7f88" font-size="11" class="sans-t">Next.js 16 Server Motion &amp;</text>
+    <text x="14" y="74" fill="#7c7f88" font-size="11" class="sans-t">fluid micro-interactions</text>
+  </g>
+
+  <!-- Connector 3 -->
+  <g transform="translate(722, 60)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#44b48b" stroke-width="2" class="flow-track"/>
+    <polygon points="30,-3 36,0 30,3" fill="#44b48b"/>
+  </g>
+
+  <!-- Step 4 Card (High-Signal Finished Phase) -->
+  <g transform="translate(760, 15)" filter="url(#pipeShadow)">
+    <rect width="190" height="96" rx="8" fill="#011821" stroke="#167e6c" stroke-width="1"/>
+    <rect x="14" y="14" width="28" height="20" rx="4" fill="#167e6c"/>
+    <text x="28" y="28" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="700" class="mono-t">04</text>
+    <text x="50" y="28" fill="#ffffff" font-size="12.5" font-weight="600" class="sans-t">Security &amp; Scale</text>
+    <text x="14" y="58" fill="#44b48b" font-size="11" font-weight="600" class="mono-t">99.999% Uptime</text>
+    <text x="14" y="74" fill="#a9acb6" font-size="11" class="sans-t">Cloudflare + CI/CD Audit</text>
+  </g>
+</svg>

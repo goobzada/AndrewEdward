@@ -30,12 +30,28 @@
 
 ## <img src="./assets/icons/zap.svg" width="16" height="16" valign="middle" /> Executive Overview
 
-Senior Full Stack Software Engineer delivering high-performance web applications, bespoke multi-tenant SaaS platforms, autonomous AI agent pipelines, and high-concurrency cloud infrastructure for US and global tech enterprises.
-
-- <img src="./assets/icons/globe.svg" width="14" height="14" valign="middle" /> **Agency & Consultancy:** [BRANCO DEV (brancodev.com)](https://brancodev.com)
-- <img src="./assets/icons/map-pin.svg" width="14" height="14" valign="middle" /> **Service Hubs:** United States (New York, Silicon Valley, Austin, Miami, Seattle, Boston, Chicago, Denver) & Global
-- <img src="./assets/icons/target.svg" width="14" height="14" valign="middle" /> **Engineering Creed:** `BUILD` &middot; `AUTOMATE` &middot; `SCALE`
-- <img src="./assets/icons/shield.svg" width="14" height="14" valign="middle" /> **Standards:** Strictly typed architectures (TypeScript 5+ / Go), zero-downtime microservices, normalized database schemas, and sub-12ms API response targets.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="./assets/icons/globe.svg" width="15" height="15" valign="middle" /> <strong>CONSULTANCY &amp; VENTURES</strong><br />
+      <a href="https://brancodev.com" target="_blank"><strong>BRANCO DEV</strong></a> &mdash; Custom SaaS Architectures &amp; Autonomous AI Systems for high-growth tech enterprises.
+    </td>
+    <td width="50%" valign="top">
+      <img src="./assets/icons/map-pin.svg" width="15" height="15" valign="middle" /> <strong>PRIMARY SERVICE HUBS</strong><br />
+      United States (Silicon Valley &middot; New York &middot; Austin &middot; Miami &middot; Seattle &middot; Boston) &amp; Global.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="./assets/icons/target.svg" width="15" height="15" valign="middle" /> <strong>ENGINEERING CREED</strong><br />
+      <code>BUILD</code> &middot; <code>AUTOMATE</code> &middot; <code>SCALE</code>
+    </td>
+    <td width="50%" valign="top">
+      <img src="./assets/icons/shield.svg" width="15" height="15" valign="middle" /> <strong>SYSTEM STANDARDS</strong><br />
+      Strict 100% Type Safety &middot; Zero-Downtime Microservices &middot; Sub-12ms API Latency Targets.
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -197,17 +213,9 @@ Senior Full Stack Software Engineer delivering high-performance web applications
 
 ## <img src="./assets/icons/workflow.svg" width="16" height="16" valign="middle" /> Delivery Lifecycle
 
-```mermaid
-graph LR
-    A[01. Architecture & Spec Discovery] --> B[02. High-Concurrency Backend & DB]
-    B --> C[03. Frontend Polish & Micro-Interactions]
-    C --> D[04. Security Audit, CI/CD & Scale]
-```
-
-1. **Architecture &amp; Spec Discovery:** Thorough technical blueprinting, data normalization modeling, and latency requirement definition.
-2. **High-Concurrency Backend &amp; DB:** Building type-safe, resilient APIs with Go/Node.js backed by PostgreSQL and Redis caching.
-3. **Frontend Precision &amp; Motion:** Pixel-perfect Next.js/React implementations with responsive layouts and fluid interactions.
-4. **Security &amp; Deployment:** Zero-downtime deployment pipelines, Cloudflare protection, SSL/TLS hardening, and live monitoring.
+<p align="center">
+  <img src="./assets/delivery-pipeline.svg" width="100%" alt="Delivery Lifecycle Process" />
+</p>
 
 ---
 
