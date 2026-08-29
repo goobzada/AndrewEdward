@@ -92,7 +92,11 @@
 
 ---
 
-## <img src="./assets/icons/terminal.svg" width="16" height="16" valign="middle" /> Dynamic Engineering Arsenal &amp; Technical Matrix
+## <img src="./assets/icons/terminal.svg" width="16" height="16" valign="middle" /> Dynamic Engineering Arsenal &amp; Technical Capabilities
+
+<p align="center">
+  <img src="./assets/animated-tech-stacks.svg?v=2" width="100%" alt="Dynamic Engineering Arsenal Showcase" />
+</p>
 
 <table>
   <thead>
