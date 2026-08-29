@@ -1,352 +1,497 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="100%" height="100%">
   <defs>
-    <!-- Column Style Light Background Gradient -->
-    <linearGradient id="stackCanvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="60%" stop-color="#F8F8FA"/>
-      <stop offset="100%" stop-color="#F1F2F6"/>
-    </linearGradient>
-
-    <!-- Spectrum Gradient for Halftone Map Dots -->
-    <linearGradient id="spectrumGrid" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d65620"/>
-      <stop offset="25%" stop-color="#ec652b"/>
-      <stop offset="50%" stop-color="#9f7aee"/>
-      <stop offset="75%" stop-color="#4575cd"/>
-      <stop offset="90%" stop-color="#44b48b"/>
-      <stop offset="100%" stop-color="#f4df69"/>
-    </linearGradient>
-
-    <!-- Subtle Elevation Shadow -->
-    <filter id="stackShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#111a4a" flood-opacity="0.04"/>
+    <!-- Multi-layer drop shadow -->
+    <filter id="boxShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04"/>
     </filter>
 
+    <linearGradient id="cardBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fafafa"/>
+    </linearGradient>
+
+    <linearGradient id="accentLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111a4a"/>
+      <stop offset="40%" stop-color="#44b48b"/>
+      <stop offset="80%" stop-color="#ec652b"/>
+      <stop offset="100%" stop-color="#9f7aee"/>
+    </linearGradient>
+
     <style>
-      @keyframes dashAnim {
-        from { stroke-dashoffset: 60; }
-        to { stroke-dashoffset: 0; }
+      @keyframes tabCycle1 {
+        0%, 17% { fill: #111a4a; color: #ffffff; }
+        20%, 97% { fill: #f1f3f7; }
+        100% { fill: #111a4a; }
       }
-      @keyframes pulseLive {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.3); opacity: 0.6; }
+      @keyframes tabText1 {
+        0%, 17% { fill: #ffffff; font-weight: 600; }
+        20%, 97% { fill: #525866; font-weight: 500; }
+        100% { fill: #ffffff; font-weight: 600; }
       }
 
-      /* 5 Stacks Carousel (20s cycle - 4s per category) */
-      @keyframes fadeStack1 {
-        0%, 16% { opacity: 1; transform: translateY(0); pointer-events: auto; }
-        20%, 96% { opacity: 0; transform: translateY(6px); pointer-events: none; }
+      @keyframes tabCycle2 {
+        0%, 17% { fill: #f1f3f7; }
+        20%, 37% { fill: #111a4a; }
+        40%, 100% { fill: #f1f3f7; }
+      }
+      @keyframes tabText2 {
+        0%, 17% { fill: #525866; font-weight: 500; }
+        20%, 37% { fill: #ffffff; font-weight: 600; }
+        40%, 100% { fill: #525866; font-weight: 500; }
+      }
+
+      @keyframes tabCycle3 {
+        0%, 37% { fill: #f1f3f7; }
+        40%, 57% { fill: #111a4a; }
+        60%, 100% { fill: #f1f3f7; }
+      }
+      @keyframes tabText3 {
+        0%, 37% { fill: #525866; font-weight: 500; }
+        40%, 57% { fill: #ffffff; font-weight: 600; }
+        60%, 100% { fill: #525866; font-weight: 500; }
+      }
+
+      @keyframes tabCycle4 {
+        0%, 57% { fill: #f1f3f7; }
+        60%, 77% { fill: #111a4a; }
+        80%, 100% { fill: #f1f3f7; }
+      }
+      @keyframes tabText4 {
+        0%, 57% { fill: #525866; font-weight: 500; }
+        60%, 77% { fill: #ffffff; font-weight: 600; }
+        80%, 100% { fill: #525866; font-weight: 500; }
+      }
+
+      @keyframes tabCycle5 {
+        0%, 77% { fill: #f1f3f7; }
+        80%, 97% { fill: #111a4a; }
+        100% { fill: #f1f3f7; }
+      }
+      @keyframes tabText5 {
+        0%, 77% { fill: #525866; font-weight: 500; }
+        80%, 97% { fill: #ffffff; font-weight: 600; }
+        100% { fill: #525866; font-weight: 500; }
+      }
+
+      /* Slide Transitions */
+      @keyframes slideShow1 {
+        0%, 17% { opacity: 1; transform: translateY(0); }
+        20%, 97% { opacity: 0; transform: translateY(4px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-      @keyframes fadeStack2 {
-        0%, 16% { opacity: 0; transform: translateY(-6px); pointer-events: none; }
-        20%, 36% { opacity: 1; transform: translateY(0); pointer-events: auto; }
-        40%, 100% { opacity: 0; transform: translateY(6px); pointer-events: none; }
+      @keyframes slideShow2 {
+        0%, 17% { opacity: 0; transform: translateY(-4px); }
+        20%, 37% { opacity: 1; transform: translateY(0); }
+        40%, 100% { opacity: 0; transform: translateY(4px); }
       }
-      @keyframes fadeStack3 {
-        0%, 36% { opacity: 0; transform: translateY(-6px); pointer-events: none; }
-        40%, 56% { opacity: 1; transform: translateY(0); pointer-events: auto; }
-        60%, 100% { opacity: 0; transform: translateY(6px); pointer-events: none; }
+      @keyframes slideShow3 {
+        0%, 37% { opacity: 0; transform: translateY(-4px); }
+        40%, 57% { opacity: 1; transform: translateY(0); }
+        60%, 100% { opacity: 0; transform: translateY(4px); }
       }
-      @keyframes fadeStack4 {
-        0%, 56% { opacity: 0; transform: translateY(-6px); pointer-events: none; }
-        60%, 76% { opacity: 1; transform: translateY(0); pointer-events: auto; }
-        80%, 100% { opacity: 0; transform: translateY(6px); pointer-events: none; }
+      @keyframes slideShow4 {
+        0%, 57% { opacity: 0; transform: translateY(-4px); }
+        60%, 77% { opacity: 1; transform: translateY(0); }
+        80%, 100% { opacity: 0; transform: translateY(4px); }
       }
-      @keyframes fadeStack5 {
-        0%, 76% { opacity: 0; transform: translateY(-6px); pointer-events: none; }
-        80%, 96% { opacity: 1; transform: translateY(0); pointer-events: auto; }
-        100% { opacity: 0; transform: translateY(6px); pointer-events: none; }
+      @keyframes slideShow5 {
+        0%, 77% { opacity: 0; transform: translateY(-4px); }
+        80%, 97% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(4px); }
       }
 
-      .stack-layer-1 { animation: fadeStack1 20s ease-in-out infinite; }
-      .stack-layer-2 { animation: fadeStack2 20s ease-in-out infinite; }
-      .stack-layer-3 { animation: fadeStack3 20s ease-in-out infinite; }
-      .stack-layer-4 { animation: fadeStack4 20s ease-in-out infinite; }
-      .stack-layer-5 { animation: fadeStack5 20s ease-in-out infinite; }
+      @keyframes pulseNode {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
 
-      .flow-track { stroke-dasharray: 4, 4; animation: dashAnim 12s linear infinite; }
-      .live-dot { animation: pulseLive 2s infinite ease-in-out; transform-origin: center; }
+      .btn-tab-1 { animation: tabCycle1 20s infinite; }
+      .btn-txt-1 { animation: tabText1 20s infinite; }
+      .btn-tab-2 { animation: tabCycle2 20s infinite; }
+      .btn-txt-2 { animation: tabText2 20s infinite; }
+      .btn-tab-3 { animation: tabCycle3 20s infinite; }
+      .btn-txt-3 { animation: tabText3 20s infinite; }
+      .btn-tab-4 { animation: tabCycle4 20s infinite; }
+      .btn-txt-4 { animation: tabText4 20s infinite; }
+      .btn-tab-5 { animation: tabCycle5 20s infinite; }
+      .btn-txt-5 { animation: tabText5 20s infinite; }
 
-      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-      .sans { font-family: 'SuisseIntl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; }
+      .view-panel-1 { animation: slideShow1 20s ease-in-out infinite; }
+      .view-panel-2 { animation: slideShow2 20s ease-in-out infinite; }
+      .view-panel-3 { animation: slideShow3 20s ease-in-out infinite; }
+      .view-panel-4 { animation: slideShow4 20s ease-in-out infinite; }
+      .view-panel-5 { animation: slideShow5 20s ease-in-out infinite; }
+
+      .pulse { animation: pulseNode 2s infinite ease-in-out; }
+      .mono-code { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, Menlo, monospace; }
+      .inter-ui { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     </style>
   </defs>
 
-  <!-- Base Container -->
-  <rect width="960" height="270" rx="10" fill="url(#stackCanvasGrad)" stroke="#e3e4e8" stroke-width="1"/>
+  <!-- Outer Card Container -->
+  <rect x="1" y="1" width="958" height="298" rx="10" fill="url(#cardBgGrad)" stroke="#e2e5ec" stroke-width="1" filter="url(#boxShadow)"/>
 
-  <!-- Halftone Map Dot Matrix Background -->
-  <g fill="url(#spectrumGrid)" opacity="0.32">
-    <circle cx="80" cy="80" r="2.5"/><circle cx="100" cy="80" r="3"/><circle cx="120" cy="80" r="3"/><circle cx="140" cy="80" r="2.5"/><circle cx="160" cy="80" r="3"/><circle cx="180" cy="80" r="3.5"/><circle cx="200" cy="80" r="3"/>
-    <circle cx="80" cy="100" r="3"/><circle cx="100" cy="100" r="3.5"/><circle cx="120" cy="100" r="4"/><circle cx="140" cy="100" r="4"/><circle cx="160" cy="100" r="3.5"/><circle cx="180" cy="100" r="4"/><circle cx="200" cy="100" r="3.5"/>
-    <circle cx="100" cy="120" r="3.5"/><circle cx="120" cy="120" r="4"/><circle cx="140" cy="120" r="4"/><circle cx="160" cy="120" r="4"/><circle cx="180" cy="120" r="3.5"/><circle cx="200" cy="120" r="3"/>
-    <circle cx="120" cy="140" r="3"/><circle cx="140" cy="140" r="3.5"/><circle cx="160" cy="140" r="3.5"/><circle cx="180" cy="140" r="3"/><circle cx="200" cy="140" r="2.5"/>
+  <!-- Top Accent Stripe -->
+  <rect x="1" y="1" width="958" height="3" rx="1.5" fill="url(#accentLineGrad)"/>
 
-    <circle cx="440" cy="80" r="2.5"/><circle cx="460" cy="80" r="3"/><circle cx="480" cy="80" r="3"/><circle cx="500" cy="80" r="2.5"/><circle cx="520" cy="80" r="3"/><circle cx="540" cy="80" r="3.5"/>
-    <circle cx="420" cy="100" r="3"/><circle cx="440" cy="100" r="3.5"/><circle cx="460" cy="100" r="4"/><circle cx="480" cy="100" r="4"/><circle cx="500" cy="100" r="4"/><circle cx="520" cy="100" r="3.5"/>
-    <circle cx="440" cy="120" r="3.5"/><circle cx="460" cy="120" r="4"/><circle cx="480" cy="120" r="4"/><circle cx="500" cy="120" r="3.5"/><circle cx="520" cy="120" r="3"/>
-
-    <circle cx="720" cy="80" r="2.5"/><circle cx="740" cy="80" r="3"/><circle cx="760" cy="80" r="3"/><circle cx="780" cy="80" r="3"/><circle cx="800" cy="80" r="2.5"/>
-    <circle cx="700" cy="100" r="3"/><circle cx="720" cy="100" r="3.5"/><circle cx="740" cy="100" r="4"/><circle cx="760" cy="100" r="4"/><circle cx="780" cy="100" r="3.5"/><circle cx="800" cy="100" r="3"/>
-    <circle cx="720" cy="120" r="3.5"/><circle cx="740" cy="120" r="4"/><circle cx="760" cy="120" r="3.5"/><circle cx="780" cy="120" r="3"/>
-  </g>
-
-  <!-- Connective Data Arcs -->
-  <g fill="none" opacity="0.45">
-    <path d="M 120 120 Q 300 50 480 100" stroke="#ec652b" stroke-width="1.2" class="flow-track"/>
-    <path d="M 480 100 Q 640 60 760 120" stroke="#167e6c" stroke-width="1.2" class="flow-track"/>
-  </g>
-
-  <!-- TOP STATUS BAR -->
-  <g transform="translate(32, 22)">
-    <circle cx="4" cy="8" r="3.5" fill="#167e6c" class="live-dot"/>
-    <text x="16" y="12" fill="#111a4a" font-size="10.5" font-weight="700" class="mono" letter-spacing="1">LIVE ARCHITECTURAL CAPABILITIES</text>
-    <text x="896" y="12" text-anchor="end" fill="#7c7f88" font-size="10" class="mono">SWISS-TECH PRECISION // BRANCO DEV</text>
-    <line x1="0" y1="24" x2="896" y2="24" stroke="#e3e4e8" stroke-width="1"/>
-  </g>
-
-  <!-- ==================== SLIDE 1: AI, LLMs & AGENTS ==================== -->
-  <g class="stack-layer-1" transform="translate(32, 60)">
-    <text x="0" y="18" fill="#111a4a" font-size="17" font-weight="600" class="sans">01. Autonomous AI, LLMs &amp; Multi-Agent Systems</text>
-    <text x="0" y="38" fill="#7c7f88" font-size="12" class="sans">Orchestrating autonomous task pipelines, RAG vector stores, and sub-12ms inference routing.</text>
-    
-    <!-- Badges Row -->
-    <g transform="translate(0, 56)">
+  <!-- ==================== HEADER BAR (Tabs & System Status) ==================== -->
+  <g transform="translate(24, 18)">
+    <!-- 5 Segmented Navigation Tabs -->
+    <g transform="translate(0, 0)">
+      <!-- Tab 1 -->
       <g transform="translate(0, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#412991"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">OpenAI API</text>
+        <rect width="134" height="28" rx="5" class="btn-tab-1"/>
+        <text x="67" y="18" text-anchor="middle" font-size="11" class="inter-ui btn-txt-1">AI &amp; Multi-Agent</text>
       </g>
-      <g transform="translate(142, 0)">
-        <rect width="168" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#ec652b"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Claude 3.5 Sonnet</text>
+      <!-- Tab 2 -->
+      <g transform="translate(140, 0)">
+        <rect width="134" height="28" rx="5" class="btn-tab-2"/>
+        <text x="67" y="18" text-anchor="middle" font-size="11" class="inter-ui btn-txt-2">Frontend &amp; UI</text>
       </g>
-      <g transform="translate(322, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#167e6c"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">LangChain</text>
+      <!-- Tab 3 -->
+      <g transform="translate(280, 0)">
+        <rect width="144" height="28" rx="5" class="btn-tab-3"/>
+        <text x="72" y="18" text-anchor="middle" font-size="11" class="inter-ui btn-txt-3">Backend &amp; Concurrency</text>
       </g>
-      <g transform="translate(464, 0)">
-        <rect width="135" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#111a4a"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Ollama Local</text>
+      <!-- Tab 4 -->
+      <g transform="translate(430, 0)">
+        <rect width="134" height="28" rx="5" class="btn-tab-4"/>
+        <text x="67" y="18" text-anchor="middle" font-size="11" class="inter-ui btn-txt-4">Cloud &amp; DevOps</text>
       </g>
-      <g transform="translate(611, 0)">
-        <rect width="145" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#ea4b71"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">n8n Automations</text>
-      </g>
-      <g transform="translate(768, 0)">
-        <rect width="128" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#f4df69"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Vector DBs</text>
+      <!-- Tab 5 -->
+      <g transform="translate(570, 0)">
+        <rect width="134" height="28" rx="5" class="btn-tab-5"/>
+        <text x="67" y="18" text-anchor="middle" font-size="11" class="inter-ui btn-txt-5">Data &amp; In-Memory</text>
       </g>
     </g>
 
-    <!-- Sub-Metrics Footer -->
-    <g transform="translate(0, 108)">
-      <rect width="896" height="32" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-      <text x="14" y="20" fill="#167e6c" font-size="11" font-weight="600" class="mono">CORE MATRIX: <tspan fill="#3b3e47" font-weight="400">ReAct Framework • Semantic Caching • Tool Calling • Multimodal Vision</tspan></text>
-      <text x="882" y="20" text-anchor="end" fill="#167e6c" font-size="10.5" font-weight="700" class="mono">STATUS: ACTIVE</text>
+    <!-- Top Right Telemetry Status -->
+    <g transform="translate(912, 14)">
+      <circle cx="-118" cy="0" r="3.5" fill="#167e6c" class="pulse"/>
+      <text x="-106" y="4" fill="#111a4a" font-size="11" font-weight="600" class="mono-code">ACTIVE ENGINE</text>
+      <text x="0" y="4" text-anchor="end" fill="#8f95a3" font-size="11" class="mono-code">// BRANCO DEV</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="0" y1="38" x2="912" y2="38" stroke="#eaedf3" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== VIEW 1: AI, LLMs & Multi-Agent ==================== -->
+  <g class="view-panel-1" transform="translate(24, 72)">
+    <!-- Left Column: Architectural Specs & Stack List -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="16" fill="#111a4a" font-size="16" font-weight="600" class="inter-ui">Autonomous AI Systems &amp; Multi-Agent Orchestration</text>
+      <text x="0" y="36" fill="#667085" font-size="12" class="inter-ui">RAG semantic search, tool-calling loops, local inference execution, and dynamic model routing.</text>
+
+      <!-- 6 Production Technology Badges -->
+      <g transform="translate(0, 52)">
+        <!-- 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#10a37f"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">OpenAI API</text>
+        </g>
+        <!-- 2 -->
+        <g transform="translate(148, 0)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#d97706"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Claude 3.5 Sonnet</text>
+        </g>
+        <!-- 3 -->
+        <g transform="translate(326, 0)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#167e6c"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">LangChain</text>
+        </g>
+        <!-- 4 -->
+        <g transform="translate(0, 42)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#111a4a"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Ollama Local</text>
+        </g>
+        <!-- 5 -->
+        <g transform="translate(148, 42)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#ea4b71"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">n8n Automation</text>
+        </g>
+        <!-- 6 -->
+        <g transform="translate(326, 42)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#f59e0b"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Vector DBs</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Column: Live Production Code / Benchmark Card -->
+    <g transform="translate(480, 0)">
+      <rect width="432" height="130" rx="8" fill="#0c101c" stroke="#1e2638" stroke-width="1"/>
+      <!-- Terminal Header -->
+      <g transform="translate(16, 14)">
+        <circle cx="0" cy="0" r="3.5" fill="#ec652b"/>
+        <circle cx="10" cy="0" r="3.5" fill="#f4df69"/>
+        <circle cx="20" cy="0" r="3.5" fill="#44b48b"/>
+        <text x="36" y="3" fill="#8f95a3" font-size="10.5" class="mono-code">orchestration/multi_agent.ts</text>
+      </g>
+      <!-- Code Body -->
+      <g transform="translate(16, 42)">
+        <text x="0" y="0" fill="#44b48b" font-size="11.5" class="mono-code">const <tspan fill="#ffffff">cluster</tspan> = await <tspan fill="#9f7aee">AgentOrchestrator</tspan>.dispatch({</text>
+        <text x="14" y="18" fill="#8f95a3" font-size="11.5" class="mono-code">model: <tspan fill="#94efb7">'claude-3-5-sonnet'</tspan>, tools: [mcp, rag],</text>
+        <text x="14" y="36" fill="#8f95a3" font-size="11.5" class="mono-code">maxTokens: <tspan fill="#ec652b">8192</tspan>, stream: <tspan fill="#44b48b">true</tspan>, latency: <tspan fill="#f4df69">'&lt;18ms'</tspan></text>
+        <text x="0" y="54" fill="#44b48b" font-size="11.5" class="mono-code">});</text>
+      </g>
+    </g>
+
+    <!-- Bottom Specs Strip -->
+    <g transform="translate(0, 142)">
+      <rect width="912" height="34" rx="6" fill="#f4f6fa" stroke="#e2e5ec" stroke-width="1"/>
+      <text x="16" y="21" fill="#525866" font-size="11" class="inter-ui"><tspan font-weight="600" fill="#111a4a">CAPABILITIES:</tspan> ReAct Decision Framework &bull; Autonomous Vector Embeddings &bull; Semantic Caching &bull; Sub-18ms TTFT</text>
+      <text x="896" y="21" text-anchor="end" fill="#167e6c" font-size="11" font-weight="600" class="mono-code">BENCHMARK: 99.99%</text>
     </g>
   </g>
 
-  <!-- ==================== SLIDE 2: FRONTEND PRECISION ==================== -->
-  <g class="stack-layer-2" transform="translate(32, 60)">
-    <text x="0" y="18" fill="#111a4a" font-size="17" font-weight="600" class="sans">02. Frontend Precision &amp; Modern Web Architecture</text>
-    <text x="0" y="38" fill="#7c7f88" font-size="12" class="sans">Next.js 16 App Router, React 19 Server Components, bespoke micro-interactions &amp; fluid motion.</text>
-    
-    <!-- Badges Row -->
-    <g transform="translate(0, 56)">
-      <g transform="translate(0, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#111a4a"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Next.js 16</text>
-      </g>
-      <g transform="translate(142, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#61DAFB"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">React 19</text>
-      </g>
-      <g transform="translate(284, 0)">
-        <rect width="150" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#3178C6"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">TypeScript 5.7</text>
-      </g>
-      <g transform="translate(446, 0)">
-        <rect width="145" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#06B6D4"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Tailwind CSS</text>
-      </g>
-      <g transform="translate(603, 0)">
-        <rect width="120" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#646CFF"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Vite Bundler</text>
-      </g>
-      <g transform="translate(735, 0)">
-        <rect width="161" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#0055FF"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Framer Motion</text>
+  <!-- ==================== VIEW 2: Frontend & UI ==================== -->
+  <g class="view-panel-2" transform="translate(24, 72)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="16" fill="#111a4a" font-size="16" font-weight="600" class="inter-ui">Frontend Precision &amp; Modern Web Applications</text>
+      <text x="0" y="36" fill="#667085" font-size="12" class="inter-ui">Next.js 16 App Router, React 19 Server Components, bespoke design systems and fluid micro-motion.</text>
+
+      <g transform="translate(0, 52)">
+        <g transform="translate(0, 0)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#000000"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Next.js 16</text>
+        </g>
+        <g transform="translate(148, 0)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#61dafb"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">React 19 Core</text>
+        </g>
+        <g transform="translate(326, 0)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#3178c6"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">TypeScript 5</text>
+        </g>
+        <g transform="translate(0, 42)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#06b6d4"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Tailwind CSS</text>
+        </g>
+        <g transform="translate(148, 42)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#646cff"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Vite Bundler</text>
+        </g>
+        <g transform="translate(326, 42)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#e11d48"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Framer Motion</text>
+        </g>
       </g>
     </g>
 
-    <!-- Sub-Metrics Footer -->
-    <g transform="translate(0, 108)">
-      <rect width="896" height="32" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-      <text x="14" y="20" fill="#3178C6" font-size="11" font-weight="600" class="mono">UI METRICS: <tspan fill="#3b3e47" font-weight="400">Server Components • 100/100 Core Web Vitals • Zero Cumulative Layout Shift</tspan></text>
-      <text x="882" y="20" text-anchor="end" fill="#3178C6" font-size="10.5" font-weight="700" class="mono">SCORE: 100%</text>
-    </g>
-  </g>
-
-  <!-- ==================== SLIDE 3: BACKEND & HIGH CONCURRENCY ==================== -->
-  <g class="stack-layer-3" transform="translate(32, 60)">
-    <text x="0" y="18" fill="#111a4a" font-size="17" font-weight="600" class="sans">03. High-Concurrency Backend &amp; Microservices</text>
-    <text x="0" y="38" fill="#7c7f88" font-size="12" class="sans">Goroutine concurrency, Node.js clusters, Python FastAPI &amp; asynchronous event streaming.</text>
-    
-    <!-- Badges Row -->
-    <g transform="translate(0, 56)">
-      <g transform="translate(0, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#00ADD8"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Go (Golang)</text>
+    <g transform="translate(480, 0)">
+      <rect width="432" height="130" rx="8" fill="#0c101c" stroke="#1e2638" stroke-width="1"/>
+      <g transform="translate(16, 14)">
+        <circle cx="0" cy="0" r="3.5" fill="#ec652b"/><circle cx="10" cy="0" r="3.5" fill="#f4df69"/><circle cx="20" cy="0" r="3.5" fill="#44b48b"/>
+        <text x="36" y="3" fill="#8f95a3" font-size="10.5" class="mono-code">app/dashboard/page.tsx</text>
       </g>
-      <g transform="translate(142, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#339933"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Node.js</text>
-      </g>
-      <g transform="translate(284, 0)">
-        <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#3776AB"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">FastAPI Py</text>
-      </g>
-      <g transform="translate(436, 0)">
-        <rect width="135" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#777BB4"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">PHP 8 / Laravel</text>
-      </g>
-      <g transform="translate(583, 0)">
-        <rect width="145" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#E10098"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">GraphQL / REST</text>
-      </g>
-      <g transform="translate(740, 0)">
-        <rect width="156" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#167e6c"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">gRPC &amp; Sockets</text>
+      <g transform="translate(16, 42)">
+        <text x="0" y="0" fill="#61dafb" font-size="11.5" class="mono-code">export default async function <tspan fill="#ffffff">Dashboard</tspan>() {</text>
+        <text x="14" y="18" fill="#8f95a3" font-size="11.5" class="mono-code">  const data = await fetchMetrics({ cache: <tspan fill="#94efb7">'no-store'</tspan> });</text>
+        <text x="14" y="36" fill="#8f95a3" font-size="11.5" class="mono-code">  return &lt;<tspan fill="#9f7aee">ClientExperience</tspan> initialData={data} /&gt;;</text>
+        <text x="0" y="54" fill="#61dafb" font-size="11.5" class="mono-code">}</text>
       </g>
     </g>
 
-    <!-- Sub-Metrics Footer -->
-    <g transform="translate(0, 108)">
-      <rect width="896" height="32" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-      <text x="14" y="20" fill="#00ADD8" font-size="11" font-weight="600" class="mono">THROUGHPUT: <tspan fill="#3b3e47" font-weight="400">Strict Type Schema • Sharded Connection Pooling • Sub-12ms API Response</tspan></text>
-      <text x="882" y="20" text-anchor="end" fill="#00ADD8" font-size="10.5" font-weight="700" class="mono">LATENCY: &lt;12MS</text>
+    <g transform="translate(0, 142)">
+      <rect width="912" height="34" rx="6" fill="#f4f6fa" stroke="#e2e5ec" stroke-width="1"/>
+      <text x="16" y="21" fill="#525866" font-size="11" class="inter-ui"><tspan font-weight="600" fill="#111a4a">STANDARDS:</tspan> 100/100 Core Web Vitals &bull; Server Components &bull; Fluid Micro-Interactions &bull; Zero CLS</text>
+      <text x="896" y="21" text-anchor="end" fill="#3178c6" font-size="11" font-weight="600" class="mono-code">SPEED: 100/100</text>
     </g>
   </g>
 
-  <!-- ==================== SLIDE 4: CLOUD & DEVOPS ==================== -->
-  <g class="stack-layer-4" transform="translate(32, 60)">
-    <text x="0" y="18" fill="#111a4a" font-size="17" font-weight="600" class="sans">04. Cloud Infrastructure, DevOps &amp; Edge Security</text>
-    <text x="0" y="38" fill="#7c7f88" font-size="12" class="sans">Multi-region container orchestration, hardened Linux environments, and automated CI/CD.</text>
-    
-    <!-- Badges Row -->
-    <g transform="translate(0, 56)">
-      <g transform="translate(0, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#2496ED"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Docker Engine</text>
-      </g>
-      <g transform="translate(142, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#326CE5"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Kubernetes</text>
-      </g>
-      <g transform="translate(284, 0)">
-        <rect width="150" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#F38020"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Cloudflare Edge</text>
-      </g>
-      <g transform="translate(446, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#FCC624"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Linux Debian</text>
-      </g>
-      <g transform="translate(588, 0)">
-        <rect width="135" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#2088FF"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">GitHub CI/CD</text>
-      </g>
-      <g transform="translate(735, 0)">
-        <rect width="161" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#ec652b"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">AWS Cloud</text>
+  <!-- ==================== VIEW 3: Backend & Concurrency ==================== -->
+  <g class="view-panel-3" transform="translate(24, 72)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="16" fill="#111a4a" font-size="16" font-weight="600" class="inter-ui">High-Concurrency Backend &amp; Microservices</text>
+      <text x="0" y="36" fill="#667085" font-size="12" class="inter-ui">Goroutine concurrency, distributed Go/Node services, gRPC streaming, and low-latency REST endpoints.</text>
+
+      <g transform="translate(0, 52)">
+        <g transform="translate(0, 0)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#00add8"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Go (Golang)</text>
+        </g>
+        <g transform="translate(148, 0)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#339933"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Node.js Engine</text>
+        </g>
+        <g transform="translate(326, 0)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#3776ab"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">FastAPI Py</text>
+        </g>
+        <g transform="translate(0, 42)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#777bb4"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">PHP 8 / Laravel</text>
+        </g>
+        <g transform="translate(148, 42)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#e10098"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">GraphQL / REST</text>
+        </g>
+        <g transform="translate(326, 42)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#167e6c"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">gRPC Streams</text>
+        </g>
       </g>
     </g>
 
-    <!-- Sub-Metrics Footer -->
-    <g transform="translate(0, 108)">
-      <rect width="896" height="32" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-      <text x="14" y="20" fill="#F38020" font-size="11" font-weight="600" class="mono">RELIABILITY: <tspan fill="#3b3e47" font-weight="400">Zero-Downtime Deployments • DDoS Edge Mitigation • TLS 1.3 Hardening</tspan></text>
-      <text x="882" y="20" text-anchor="end" fill="#F38020" font-size="10.5" font-weight="700" class="mono">UPTIME: 99.999%</text>
-    </g>
-  </g>
-
-  <!-- ==================== SLIDE 5: DATABASES & CACHING ==================== -->
-  <g class="stack-layer-5" transform="translate(32, 60)">
-    <text x="0" y="18" fill="#111a4a" font-size="17" font-weight="600" class="sans">05. Database Normalization &amp; In-Memory Caching</text>
-    <text x="0" y="38" fill="#7c7f88" font-size="12" class="sans">ACID compliance, multi-tenant partitioning, sub-millisecond Redis caches &amp; ORM type safety.</text>
-    
-    <!-- Badges Row -->
-    <g transform="translate(0, 56)">
-      <g transform="translate(0, 0)">
-        <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#4169E1"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">PostgreSQL 16</text>
+    <g transform="translate(480, 0)">
+      <rect width="432" height="130" rx="8" fill="#0c101c" stroke="#1e2638" stroke-width="1"/>
+      <g transform="translate(16, 14)">
+        <circle cx="0" cy="0" r="3.5" fill="#ec652b"/><circle cx="10" cy="0" r="3.5" fill="#f4df69"/><circle cx="20" cy="0" r="3.5" fill="#44b48b"/>
+        <text x="36" y="3" fill="#8f95a3" font-size="10.5" class="mono-code">services/dispatcher.go</text>
       </g>
-      <g transform="translate(152, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#4479A1"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">MySQL 8</text>
-      </g>
-      <g transform="translate(294, 0)">
-        <rect width="135" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#DC382D"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Redis Cluster</text>
-      </g>
-      <g transform="translate(441, 0)">
-        <rect width="130" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#47A248"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">MongoDB</text>
-      </g>
-      <g transform="translate(583, 0)">
-        <rect width="135" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#3ECF8E"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Supabase DB</text>
-      </g>
-      <g transform="translate(730, 0)">
-        <rect width="166" height="34" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-        <circle cx="16" cy="17" r="3.5" fill="#111a4a"/>
-        <text x="28" y="21" fill="#111a4a" font-size="11.5" font-weight="600" class="sans">Prisma / Drizzle</text>
+      <g transform="translate(16, 42)">
+        <text x="0" y="0" fill="#00add8" font-size="11.5" class="mono-code">func <tspan fill="#ffffff">ProcessTelemetry</tspan>(stream pb.StreamService) error {</text>
+        <text x="14" y="18" fill="#8f95a3" font-size="11.5" class="mono-code">  go pool.DistributeWorkers(ctx, stream.Receive())</text>
+        <text x="14" y="36" fill="#8f95a3" font-size="11.5" class="mono-code">  return redisClient.Publish(ctx, <tspan fill="#94efb7">"events"</tspan>, payload)</text>
+        <text x="0" y="54" fill="#00add8" font-size="11.5" class="mono-code">}</text>
       </g>
     </g>
 
-    <!-- Sub-Metrics Footer -->
-    <g transform="translate(0, 108)">
-      <rect width="896" height="32" rx="6" fill="#ffffff" stroke="#e3e4e8" stroke-width="1"/>
-      <text x="14" y="20" fill="#4169E1" font-size="11" font-weight="600" class="mono">INTEGRITY: <tspan fill="#3b3e47" font-weight="400">Third Normal Form • Sharded Connection Pooling • Automated Backups • Read Replicas</tspan></text>
-      <text x="882" y="20" text-anchor="end" fill="#4169E1" font-size="10.5" font-weight="700" class="mono">ACID: ENFORCED</text>
+    <g transform="translate(0, 142)">
+      <rect width="912" height="34" rx="6" fill="#f4f6fa" stroke="#e2e5ec" stroke-width="1"/>
+      <text x="16" y="21" fill="#525866" font-size="11" class="inter-ui"><tspan font-weight="600" fill="#111a4a">THROUGHPUT:</tspan> Sub-12ms API Responses &bull; Goroutine Non-Blocking Pools &bull; Strict Type Schemas</text>
+      <text x="896" y="21" text-anchor="end" fill="#00add8" font-size="11" font-weight="600" class="mono-code">LATENCY: &lt;12MS</text>
     </g>
   </g>
 
-  <!-- BOTTOM PROGRESS INDICATOR DOTS -->
-  <g transform="translate(440, 246)">
-    <circle cx="0" cy="0" r="3" fill="#ec652b"/>
-    <circle cx="20" cy="0" r="3" fill="#9f7aee"/>
-    <circle cx="40" cy="0" r="3" fill="#4575cd"/>
-    <circle cx="60" cy="0" r="3" fill="#44b48b"/>
-    <circle cx="80" cy="0" r="3" fill="#f4df69"/>
+  <!-- ==================== VIEW 4: Cloud & DevOps ==================== -->
+  <g class="view-panel-4" transform="translate(24, 72)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="16" fill="#111a4a" font-size="16" font-weight="600" class="inter-ui">Cloud Infrastructure, DevOps &amp; Edge Security</text>
+      <text x="0" y="36" fill="#667085" font-size="12" class="inter-ui">Container clusters, automated GitHub Actions CI/CD, Cloudflare Enterprise edge protection, and Linux hardening.</text>
+
+      <g transform="translate(0, 52)">
+        <g transform="translate(0, 0)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#2496ed"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Docker Engine</text>
+        </g>
+        <g transform="translate(148, 0)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#326ce5"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Kubernetes</text>
+        </g>
+        <g transform="translate(326, 0)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#f38020"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Cloudflare Edge</text>
+        </g>
+        <g transform="translate(0, 42)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#fcc624"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Linux Debian</text>
+        </g>
+        <g transform="translate(148, 42)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#2088ff"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">GitHub Actions</text>
+        </g>
+        <g transform="translate(326, 42)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#ec652b"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">AWS Cloud</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(480, 0)">
+      <rect width="432" height="130" rx="8" fill="#0c101c" stroke="#1e2638" stroke-width="1"/>
+      <g transform="translate(16, 14)">
+        <circle cx="0" cy="0" r="3.5" fill="#ec652b"/><circle cx="10" cy="0" r="3.5" fill="#f4df69"/><circle cx="20" cy="0" r="3.5" fill="#44b48b"/>
+        <text x="36" y="3" fill="#8f95a3" font-size="10.5" class="mono-code">k8s/cluster-deployment.yaml</text>
+      </g>
+      <g transform="translate(16, 42)">
+        <text x="0" y="0" fill="#f38020" font-size="11.5" class="mono-code">apiVersion: <tspan fill="#ffffff">apps/v1</tspan></text>
+        <text x="0" y="18" fill="#f38020" font-size="11.5" class="mono-code">kind: <tspan fill="#ffffff">Deployment</tspan></text>
+        <text x="0" y="36" fill="#8f95a3" font-size="11.5" class="mono-code">spec: { replicas: <tspan fill="#ec652b">64</tspan>, strategy: { type: <tspan fill="#44b48b">RollingUpdate</tspan> } }</text>
+      </g>
+    </g>
+
+    <g transform="translate(0, 142)">
+      <rect width="912" height="34" rx="6" fill="#f4f6fa" stroke="#e2e5ec" stroke-width="1"/>
+      <text x="16" y="21" fill="#525866" font-size="11" class="inter-ui"><tspan font-weight="600" fill="#111a4a">INFRASTRUCTURE:</tspan> Zero-Downtime Rolling Deploys &bull; DDoS Mitigation &bull; Automated SSL/TLS</text>
+      <text x="896" y="21" text-anchor="end" fill="#f38020" font-size="11" font-weight="600" class="mono-code">UPTIME: 99.999%</text>
+    </g>
+  </g>
+
+  <!-- ==================== VIEW 5: Data & In-Memory ==================== -->
+  <g class="view-panel-5" transform="translate(24, 72)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="16" fill="#111a4a" font-size="16" font-weight="600" class="inter-ui">Database Normalization &amp; In-Memory Caching</text>
+      <text x="0" y="36" fill="#667085" font-size="12" class="inter-ui">PostgreSQL 16 normalization, Redis caching layers, connection pooling, and multi-tenant partitioning.</text>
+
+      <g transform="translate(0, 52)">
+        <g transform="translate(0, 0)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#4169e1"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">PostgreSQL 16</text>
+        </g>
+        <g transform="translate(148, 0)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#4479a1"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">MySQL 8</text>
+        </g>
+        <g transform="translate(326, 0)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#dc382d"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Redis Cluster</text>
+        </g>
+        <g transform="translate(0, 42)">
+          <rect width="140" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#47a248"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">MongoDB</text>
+        </g>
+        <g transform="translate(148, 42)">
+          <rect width="170" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#3ecf8e"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Supabase DB</text>
+        </g>
+        <g transform="translate(326, 42)">
+          <rect width="136" height="34" rx="6" fill="#ffffff" stroke="#e3e6ed" stroke-width="1"/>
+          <circle cx="16" cy="17" r="4" fill="#111a4a"/>
+          <text x="28" y="21" fill="#111a4a" font-size="12" font-weight="600" class="inter-ui">Prisma / Drizzle</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(480, 0)">
+      <rect width="432" height="130" rx="8" fill="#0c101c" stroke="#1e2638" stroke-width="1"/>
+      <g transform="translate(16, 14)">
+        <circle cx="0" cy="0" r="3.5" fill="#ec652b"/><circle cx="10" cy="0" r="3.5" fill="#f4df69"/><circle cx="20" cy="0" r="3.5" fill="#44b48b"/>
+        <text x="36" y="3" fill="#8f95a3" font-size="10.5" class="mono-code">database/schema.prisma</text>
+      </g>
+      <g transform="translate(16, 42)">
+        <text x="0" y="0" fill="#4169e1" font-size="11.5" class="mono-code">model <tspan fill="#ffffff">TenantCluster</tspan> {</text>
+        <text x="14" y="18" fill="#8f95a3" font-size="11.5" class="mono-code">  id        String   @id @default(uuid())</text>
+        <text x="14" y="36" fill="#8f95a3" font-size="11.5" class="mono-code">  metrics   Json     @db.JsonB</text>
+        <text x="0" y="54" fill="#4169e1" font-size="11.5" class="mono-code">}</text>
+      </g>
+    </g>
+
+    <g transform="translate(0, 142)">
+      <rect width="912" height="34" rx="6" fill="#f4f6fa" stroke="#e2e5ec" stroke-width="1"/>
+      <text x="16" y="21" fill="#525866" font-size="11" class="inter-ui"><tspan font-weight="600" fill="#111a4a">INTEGRITY:</tspan> Third Normal Form &bull; ACID Guarantees &bull; Read Replicas &bull; Connection Sharding</text>
+      <text x="896" y="21" text-anchor="end" fill="#4169e1" font-size="11" font-weight="600" class="mono-code">ACID: STRICT</text>
+    </g>
   </g>
 </svg>
