@@ -92,69 +92,89 @@
 
 ---
 
-## <img src="./assets/icons/terminal.svg" width="16" height="16" valign="middle" /> Dynamic Engineering Arsenal
+## <img src="./assets/icons/terminal.svg" width="16" height="16" valign="middle" /> Dynamic Engineering Arsenal &amp; Technical Matrix
 
-<p align="center">
-  <img src="./assets/animated-tech-stacks.svg" width="100%" alt="Dynamic Animated Tech Stacks on Halftone Map" />
-</p>
-
-### <img src="./assets/icons/sparkles.svg" width="15" height="15" valign="middle" /> AI, LLMs & Intelligent Workflows
-<p align="left">
-  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Claude_3.5_Sonnet-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Claude AI" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
-  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/n8n_Automations-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" />
-</p>
-
-### <img src="./assets/icons/monitor.svg" width="15" height="15" valign="middle" /> Frontend & Modern Web Engineering
-<p align="left">
-  <img src="https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript_5.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
-</p>
-
-### <img src="./assets/icons/database.svg" width="15" height="15" valign="middle" /> Backend, APIs & High-Concurrency Services
-<p align="left">
-  <img src="https://img.shields.io/badge/Go_(Golang)-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/PHP_8+-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" />
-  <img src="https://img.shields.io/badge/RESTful_APIs-005571?style=flat-square&logo=openapiinitiative&logoColor=white" alt="REST APIs" />
-  <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL" />
-  <img src="https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="WebSockets" />
-  <img src="https://img.shields.io/badge/gRPC-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" />
-</p>
-
-### <img src="./assets/icons/network.svg" width="15" height="15" valign="middle" /> Cloud, DevOps & Server Infrastructure
-<p align="left">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-  <img src="https://img.shields.io/badge/Cloudflare_Enterprise-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare" />
-  <img src="https://img.shields.io/badge/Linux_Debian-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/AWS_Cloud-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" />
-</p>
-
-### <img src="./assets/icons/hard-drive.svg" width="15" height="15" valign="middle" /> Database Normalization & In-Memory Caching
-<p align="left">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MySQL_8-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Redis_Cluster-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
-</p>
+<table>
+  <thead>
+    <tr>
+      <th align="left" width="22%">Engineering Domain</th>
+      <th align="left" width="38%">Production Stack &amp; Tooling</th>
+      <th align="left" width="40%">Core Capabilities &amp; Architecture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src="./assets/icons/sparkles.svg" width="14" height="14" valign="middle" /> <strong>AI &amp; Multi-Agent</strong>
+      </td>
+      <td>
+        <a href="https://openai.com"><img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" /></a>
+        <a href="https://anthropic.com"><img src="https://img.shields.io/badge/Claude_3.5_Sonnet-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" /></a>
+        <a href="https://langchain.com"><img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" /></a>
+        <a href="https://ollama.ai"><img src="https://img.shields.io/badge/Ollama_Local-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" /></a>
+        <a href="https://n8n.io"><img src="https://img.shields.io/badge/n8n_Automate-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" /></a>
+        <a href="#"><img src="https://img.shields.io/badge/Vector_DBs-FFD21E?style=flat-square&logo=qdrant&logoColor=black" alt="Vector DB" /></a>
+      </td>
+      <td>Autonomous multi-agent orchestration, RAG semantic search, local LLM execution, dynamic model load balancing, and tool-calling loops.</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./assets/icons/monitor.svg" width="14" height="14" valign="middle" /> <strong>Frontend &amp; UI</strong>
+      </td>
+      <td>
+        <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
+        <a href="https://react.dev"><img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /></a>
+        <a href="https://typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript_5.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+        <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" /></a>
+        <a href="https://vitejs.dev"><img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /></a>
+        <a href="https://framer.com/motion"><img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer" /></a>
+      </td>
+      <td>100/100 Core Web Vitals, React Server Components (RSC), bespoke design token systems, fluid micro-interactions, and canvas graphics.</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./assets/icons/database.svg" width="14" height="14" valign="middle" /> <strong>Backend &amp; Concurrency</strong>
+      </td>
+      <td>
+        <a href="https://go.dev"><img src="https://img.shields.io/badge/Go_(Golang)-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /></a>
+        <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node" /></a>
+        <a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI_Python-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /></a>
+        <a href="https://laravel.com"><img src="https://img.shields.io/badge/PHP_8_/_Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" /></a>
+        <a href="https://grpc.io"><img src="https://img.shields.io/badge/gRPC_&amp;_Sockets-244C5A?style=flat-square&logo=grpc&logoColor=white" alt="gRPC" /></a>
+        <a href="https://graphql.org"><img src="https://img.shields.io/badge/GraphQL_/_REST-E10098?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL" /></a>
+      </td>
+      <td>Sub-12ms API response targets, goroutine non-blocking pools, connection multiplexing, asynchronous queues, and type-safe contracts.</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./assets/icons/network.svg" width="14" height="14" valign="middle" /> <strong>Cloud &amp; DevOps</strong>
+      </td>
+      <td>
+        <a href="https://docker.com"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /></a>
+        <a href="https://kubernetes.io"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
+        <a href="https://cloudflare.com"><img src="https://img.shields.io/badge/Cloudflare_Enterprise-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare" /></a>
+        <a href="https://debian.org"><img src="https://img.shields.io/badge/Linux_Debian-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" /></a>
+        <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="Actions" /></a>
+        <a href="https://aws.amazon.com"><img src="https://img.shields.io/badge/AWS_Cloud-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /></a>
+      </td>
+      <td>Zero-downtime rolling deployments, multi-region failover, edge DDoS mitigation, hardened Linux VPS nodes, and automated CI/CD pipelines.</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./assets/icons/hard-drive.svg" width="14" height="14" valign="middle" /> <strong>Data &amp; In-Memory</strong>
+      </td>
+      <td>
+        <a href="https://postgresql.org"><img src="https://img.shields.io/badge/PostgreSQL_16-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="Postgres" /></a>
+        <a href="https://mysql.com"><img src="https://img.shields.io/badge/MySQL_8-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" /></a>
+        <a href="https://redis.io"><img src="https://img.shields.io/badge/Redis_Cluster-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" /></a>
+        <a href="https://mongodb.com"><img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
+        <a href="https://supabase.com"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" /></a>
+        <a href="https://prisma.io"><img src="https://img.shields.io/badge/Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" /></a>
+      </td>
+      <td>Third Normal Form (3NF) relational modeling, multi-tenant row partitioning, sub-millisecond Redis caching, and ACID transaction safety.</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
