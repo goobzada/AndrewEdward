@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">Hi, I'm Andrew Edward 👋</h1>
+<h1 align="center">Hi, I'm Andrew Edward</h1>
 <h3 align="center">Principal Systems Architect & Founder at <a href="https://brancodev.com" target="_blank">BRANCO DEV</a></h3>
 
 <p align="center">
@@ -36,47 +36,47 @@
 
 ---
 
-## ⚡ Executive Summary & Architectural Vision
+## <img src="./assets/icons/zap.svg" width="18" height="18" valign="middle" /> Executive Summary & Architectural Vision
 
 Senior Full Stack Software Engineer delivering high-performance web applications, bespoke multi-tenant SaaS platforms, autonomous AI agent pipelines, and high-concurrency cloud infrastructure for US and global tech enterprises.
 
-- 🌐 **Agency & Consultancy:** [BRANCO DEV (brancodev.com)](https://brancodev.com)
-- 📍 **Service Hubs:** United States (New York, Silicon Valley, Austin, Miami, Seattle, Boston, Chicago, Denver) & Global
-- 🎯 **Engineering Creed:** **BUILD • AUTOMATE • SCALE**
-- 🛡️ **Technical Standards:** Strictly typed architectures (TypeScript 5+ / Go), zero-downtime microservices, normalized database designs, and sub-12ms API response targets.
+- <img src="./assets/icons/globe.svg" width="15" height="15" valign="middle" /> **Agency & Consultancy:** [BRANCO DEV (brancodev.com)](https://brancodev.com)
+- <img src="./assets/icons/map-pin.svg" width="15" height="15" valign="middle" /> **Service Hubs:** United States (New York, Silicon Valley, Austin, Miami, Seattle, Boston, Chicago, Denver) & Global
+- <img src="./assets/icons/target.svg" width="15" height="15" valign="middle" /> **Engineering Creed:** **BUILD • AUTOMATE • SCALE**
+- <img src="./assets/icons/shield.svg" width="15" height="15" valign="middle" /> **Technical Standards:** Strictly typed architectures (TypeScript 5+ / Go), zero-downtime microservices, normalized database designs, and sub-12ms API response targets.
 
 ---
 
-## 🏛️ Core Engineering Specializations
+## <img src="./assets/icons/layers.svg" width="18" height="18" valign="middle" /> Core Engineering Specializations
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>⚡ 01. Custom SaaS Platform Architecture</h4>
+      <h4><img src="./assets/icons/server.svg" width="16" height="16" valign="middle" /> 01. Custom SaaS Platform Architecture</h4>
       <p>Multi-tenant architectures, automated Stripe/LemonSqueezy subscription billing engines, RBAC permission matrices, and high-concurrency background job processors.</p>
     </td>
     <td width="50%" valign="top">
-      <h4>🤖 02. AI Systems, Agents & Automations</h4>
+      <h4><img src="./assets/icons/bot.svg" width="16" height="16" valign="middle" /> 02. AI Systems, Agents & Automations</h4>
       <p>Autonomous LLM multi-agent orchestration, RAG pipelines, custom vector embeddings, local model hosting (Ollama), and complex workflow automation (n8n, LangChain).</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>💻 03. High-Performance Web Applications</h4>
+      <h4><img src="./assets/icons/layout.svg" width="16" height="16" valign="middle" /> 03. High-Performance Web Applications</h4>
       <p>Modern frontend engineering utilizing Next.js 16 App Router, React 19 Server Components, Tailwind CSS design systems, and fluid editorial micro-interactions.</p>
     </td>
     <td width="50%" valign="top">
-      <h4>⚙️ 04. Backend Microservices & Databases</h4>
+      <h4><img src="./assets/icons/cpu.svg" width="16" height="16" valign="middle" /> 04. Backend Microservices & Databases</h4>
       <p>Resilient Go and Node.js backend services, normalized PostgreSQL/MySQL schemas, Redis in-memory caching tiers, and high-throughput REST/GraphQL/gRPC APIs.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>☁️ 05. Cloud Infrastructure & DevOps</h4>
+      <h4><img src="./assets/icons/cloud.svg" width="16" height="16" valign="middle" /> 05. Cloud Infrastructure & DevOps</h4>
       <p>Dockerized containerization, Kubernetes clusters, Cloudflare Edge routing & security, Linux server hardening, and automated GitHub Actions CI/CD pipelines.</p>
     </td>
     <td width="50%" valign="top">
-      <h4>🔒 06. Security, Compliance & Observability</h4>
+      <h4><img src="./assets/icons/lock.svg" width="16" height="16" valign="middle" /> 06. Security, Compliance & Observability</h4>
       <p>End-to-end data encryption, JWT/OAuth2 authentication lifecycles, structured logging, distributed tracing, and automated vulnerability monitoring.</p>
     </td>
   </tr>
@@ -84,13 +84,13 @@ Senior Full Stack Software Engineer delivering high-performance web applications
 
 ---
 
-## 🛠️ Dynamic Engineering Arsenal & Stacks
+## <img src="./assets/icons/terminal.svg" width="18" height="18" valign="middle" /> Dynamic Engineering Arsenal & Stacks
 
 <p align="center">
   <img src="./assets/animated-tech-stacks.svg" width="100%" alt="Dynamic Animated Tech Stacks on Halftone Map" />
 </p>
 
-### ⚡ AI, LLMs & Intelligent Workflows
+### <img src="./assets/icons/sparkles.svg" width="16" height="16" valign="middle" /> AI, LLMs & Intelligent Workflows
 <p align="left">
   <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Claude_3.5_Sonnet-D97706?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude AI" />
@@ -100,7 +100,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/n8n_Automations-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
 </p>
 
-### 💻 Frontend & Modern Web Engineering
+### <img src="./assets/icons/monitor.svg" width="16" height="16" valign="middle" /> Frontend & Modern Web Engineering
 <p align="left">
   <img src="https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -112,7 +112,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </p>
 
-### ⚙️ Backend, APIs & High-Concurrency Services
+### <img src="./assets/icons/database.svg" width="16" height="16" valign="middle" /> Backend, APIs & High-Concurrency Services
 <p align="left">
   <img src="https://img.shields.io/badge/Go_(Golang)-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
@@ -127,7 +127,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white" alt="gRPC" />
 </p>
 
-### ☁️ Cloud, DevOps & Server Infrastructure
+### <img src="./assets/icons/network.svg" width="16" height="16" valign="middle" /> Cloud, DevOps & Server Infrastructure
 <p align="left">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
@@ -138,7 +138,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   <img src="https://img.shields.io/badge/AWS_Cloud-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
 </p>
 
-### 🗄️ Database Normalization & In-Memory Caching
+### <img src="./assets/icons/hard-drive.svg" width="16" height="16" valign="middle" /> Database Normalization & In-Memory Caching
 <p align="left">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
@@ -150,12 +150,12 @@ Senior Full Stack Software Engineer delivering high-performance web applications
 
 ---
 
-## 📁 5 Featured Case Studies & Production Architectures
+## <img src="./assets/icons/folder.svg" width="18" height="18" valign="middle" /> 5 Featured Case Studies & Production Architectures
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🚀 01 — InfraForge OS</h3>
+      <h3><img src="./assets/icons/terminal.svg" width="16" height="16" valign="middle" /> 01 — InfraForge OS</h3>
       <p><strong>Autonomous AI Development & Infrastructure OS</strong></p>
       <p>Platform designed to orchestrate autonomous AI agents, infrastructure provisioning, multi-tenant databases, and CI/CD pipelines across multiple tech stacks.</p>
       <p><em>Tech: TypeScript, Go, Docker, PostgreSQL, Claude AI</em></p>
@@ -166,7 +166,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>💳 02 — BillLaunch SaaS</h3>
+      <h3><img src="./assets/icons/credit-card.svg" width="16" height="16" valign="middle" /> 02 — BillLaunch SaaS</h3>
       <p><strong>Enterprise Billing & Invoicing Engine</strong></p>
       <p>Multi-tenant automated billing, customer subscription management, and financial audit dashboard engineered for high-concurrency enterprise workflows ($2.4M+ volume).</p>
       <p><em>Tech: Next.js 16, TypeScript, PostgreSQL, Stripe Engine, Redis</em></p>
@@ -174,13 +174,13 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🚛 03 — AeroLogistics AI</h3>
+      <h3><img src="./assets/icons/truck.svg" width="16" height="16" valign="middle" /> 03 — AeroLogistics AI</h3>
       <p><strong>Real-Time Fleet & Telematics Dispatch Engine</strong></p>
       <p>Autonomous logistics routing, dynamic telematics aggregation (1.8M events/sec), predictive scheduling, and real-time fleet coordination.</p>
       <p><em>Tech: Go (Golang), gRPC, WebSockets, PostGIS, Docker, Kafka</em></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🏢 04 — ClientOps Portal</h3>
+      <h3><img src="./assets/icons/building.svg" width="16" height="16" valign="middle" /> 04 — ClientOps Portal</h3>
       <p><strong>High-Traffic Enterprise Client Hub</strong></p>
       <p>High-throughput client management platform with zero-knowledge 256-bit AES encryption, real-time analytics, and automated SOC2/GDPR compliance pipelines.</p>
       <p><em>Tech: React 19, Node.js Microservices, Redis Caching, AWS S3</em></p>
@@ -188,7 +188,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
   </tr>
   <tr>
     <td colspan="2" valign="top">
-      <h3>🌐 05 — OmniRoute AI Gateway</h3>
+      <h3><img src="./assets/icons/compass.svg" width="16" height="16" valign="middle" /> 05 — OmniRoute AI Gateway</h3>
       <p><strong>Multi-LLM Load Balancer & Intelligent Routing Engine</strong></p>
       <p>Unified enterprise AI gateway routing queries across 500+ models with dynamic failover, latency optimization (18ms TTFT), and semantic token caching.</p>
       <p><em>Tech: TypeScript, Python FastAPI, Redis Semantic Cache, Claude 3.5, OpenAI, Ollama</em></p>
@@ -203,7 +203,7 @@ Senior Full Stack Software Engineer delivering high-performance web applications
 
 ---
 
-## ⚙️ How Projects Get Delivered
+## <img src="./assets/icons/workflow.svg" width="18" height="18" valign="middle" /> How Projects Get Delivered
 
 ```mermaid
 graph LR
@@ -219,7 +219,7 @@ graph LR
 
 ---
 
-## 📊 Performance & Architecture Metrics
+## <img src="./assets/icons/bar-chart.svg" width="18" height="18" valign="middle" /> Performance & Architecture Metrics
 
 <p align="center">
   <img src="https://img.shields.io/badge/Public_Repositories-30+-111a4a?style=for-the-badge&logo=github&logoColor=44b48b" alt="Repositories" />
@@ -232,6 +232,6 @@ graph LR
 
 <p align="center">
   <strong>Ready to engineer your next digital product?</strong><br />
-  🌐 <a href="https://brancodev.com" target="_blank"><strong>brancodev.com</strong></a> • ✉️ <a href="mailto:grf87487@email.vccs.edu"><strong>grf87487@email.vccs.edu</strong></a><br /><br />
+  <img src="./assets/icons/globe.svg" width="14" height="14" valign="middle" /> <a href="https://brancodev.com" target="_blank"><strong>brancodev.com</strong></a> • <img src="./assets/icons/mail.svg" width="14" height="14" valign="middle" /> <a href="mailto:grf87487@email.vccs.edu"><strong>grf87487@email.vccs.edu</strong></a><br /><br />
   <em>USA & Global Consulting • Full-Stack Engineering • Custom SaaS • Autonomous AI</em>
 </p>
